@@ -6,6 +6,11 @@
 //
 
 #import "AppDelegate.h"
+#import "REDRootViewController.h"
+#import "REDHomeViewController.h"
+#import "REDMineViewController.h"
+#import "REDHomeNavigationController.h"
+#import "REDMineNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -16,9 +21,39 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UIWindow *window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+    [window setBackgroundColor: [UIColor whiteColor]];
+    [self setWindow: window];
+    
+    [[self window] setRootViewController: [self createRoot]];
+    
+    [[self window] makeKeyAndVisible];
     return YES;
 }
 
+- (void)registerAndSetup {
+
+    [self registerUmeng];
+    [self addNotification];
+    [self setupReachability];
+}
+
+- (UITabBarController *)createRoot {
+
+    REDRootViewController *root = [[REDRootViewController alloc] init];
+    
+    REDHomeNavigationController *homeNC = [[REDHomeNavigationController alloc] initWithRootViewController: [[REDHomeViewController alloc] init]];
+    REDMineNavigationController *mineNC = [[REDMineNavigationController alloc] initWithRootViewController: [[REDMineViewController alloc] init]];
+    
+    homeNC.tabBarItem.title = @"home";
+    mineNC.tabBarItem.title = @"mine";
+    
+    NSArray *branches = @[homeNC, mineNC];
+    [root setViewControllers: branches];
+    
+    return root;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

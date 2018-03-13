@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1B583B20529EAD002CAE83 /* FFHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B583A20529EAD002CAE83 /* FFHttpManager.m */; };
+		4B1B583E2052A204002CAE83 /* FFHttpBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B583D2052A204002CAE83 /* FFHttpBaseService.m */; };
+		4B1B58412052A460002CAE83 /* FFHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B58402052A460002CAE83 /* FFHttpService.m */; };
 		4B34B8FE205266B7005B1CC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B8FD205266B7005B1CC7 /* AppDelegate.m */; };
-		4B34B901205266B7005B1CC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B900205266B7005B1CC7 /* ViewController.m */; };
-		4B34B904205266B8005B1CC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B34B902205266B8005B1CC7 /* Main.storyboard */; };
 		4B34B907205266B9005B1CC7 /* Red.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B905205266B8005B1CC7 /* Red.xcdatamodeld */; };
 		4B34B909205266B9005B1CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B34B908205266B9005B1CC7 /* Assets.xcassets */; };
 		4B34B90C205266BA005B1CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B34B90A205266BA005B1CC7 /* LaunchScreen.storyboard */; };
 		4B34B90F205266BA005B1CC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B90E205266BA005B1CC7 /* main.m */; };
 		4B34B919205266BA005B1CC7 /* RedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B918205266BA005B1CC7 /* RedTests.m */; };
 		4B34B924205266BC005B1CC7 /* RedUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B923205266BC005B1CC7 /* RedUITests.m */; };
+		4B34B9352052692E005B1CC7 /* AppDelegate+FFRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B9342052692E005B1CC7 /* AppDelegate+FFRegister.m */; };
+		4B34B93820526967005B1CC7 /* AppDelegate+FFSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B93720526967005B1CC7 /* AppDelegate+FFSetup.m */; };
+		4B34B93E20526D88005B1CC7 /* REDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B93D20526D88005B1CC7 /* REDBaseViewController.m */; };
+		4B34B94120526DA8005B1CC7 /* REDBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B94020526DA8005B1CC7 /* REDBaseNavigationController.m */; };
+		4B34B94420526DD5005B1CC7 /* REDBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B94320526DD5005B1CC7 /* REDBaseTabBarController.m */; };
+		4B34B94820526E03005B1CC7 /* REDBaseNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B94720526E03005B1CC7 /* REDBaseNavigationBar.m */; };
+		4B34B94E20526E6B005B1CC7 /* REDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B94D20526E6B005B1CC7 /* REDHomeViewController.m */; };
+		4B34B95220526E7F005B1CC7 /* REDMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B95120526E7F005B1CC7 /* REDMineViewController.m */; };
+		4B34B95520526ED9005B1CC7 /* REDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B95420526ED9005B1CC7 /* REDRootViewController.m */; };
+		4B34B95820526F72005B1CC7 /* REDMineNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B95720526F72005B1CC7 /* REDMineNavigationController.m */; };
+		4B34B95B20526F81005B1CC7 /* REDHomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B95A20526F81005B1CC7 /* REDHomeNavigationController.m */; };
+		4B493F152057CC75004EE319 /* AppDelegate+FFNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B493F142057CC75004EE319 /* AppDelegate+FFNotification.m */; };
+		4B493F192057D236004EE319 /* FFNoticeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B493F182057D236004EE319 /* FFNoticeManager.m */; };
+		61B89B8C7BF0311A2B0701A9 /* libPods-Red.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C963F1E2C6AA043661E5C3C4 /* libPods-Red.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +51,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32E5FEC7989FD4AE82FC06B3 /* Pods-Red.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Red/Pods-Red.debug.xcconfig"; sourceTree = "<group>"; };
+		4B1B583920529EAD002CAE83 /* FFHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFHttpManager.h; sourceTree = "<group>"; };
+		4B1B583A20529EAD002CAE83 /* FFHttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHttpManager.m; sourceTree = "<group>"; };
+		4B1B583C2052A204002CAE83 /* FFHttpBaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFHttpBaseService.h; sourceTree = "<group>"; };
+		4B1B583D2052A204002CAE83 /* FFHttpBaseService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHttpBaseService.m; sourceTree = "<group>"; };
+		4B1B583F2052A460002CAE83 /* FFHttpService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFHttpService.h; sourceTree = "<group>"; };
+		4B1B58402052A460002CAE83 /* FFHttpService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHttpService.m; sourceTree = "<group>"; };
 		4B34B8F9205266B6005B1CC7 /* Red.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Red.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B34B8FC205266B7005B1CC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4B34B8FD205266B7005B1CC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4B34B8FF205266B7005B1CC7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4B34B900205266B7005B1CC7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4B34B903205266B8005B1CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B34B906205266B8005B1CC7 /* Red.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Red.xcdatamodel; sourceTree = "<group>"; };
 		4B34B908205266B9005B1CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B34B90B205266BA005B1CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +72,36 @@
 		4B34B91F205266BB005B1CC7 /* RedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B34B923205266BC005B1CC7 /* RedUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedUITests.m; sourceTree = "<group>"; };
 		4B34B925205266BC005B1CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B34B93120526717005B1CC7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4B34B9332052692E005B1CC7 /* AppDelegate+FFRegister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+FFRegister.h"; sourceTree = "<group>"; };
+		4B34B9342052692E005B1CC7 /* AppDelegate+FFRegister.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+FFRegister.m"; sourceTree = "<group>"; };
+		4B34B93620526967005B1CC7 /* AppDelegate+FFSetup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+FFSetup.h"; sourceTree = "<group>"; };
+		4B34B93720526967005B1CC7 /* AppDelegate+FFSetup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+FFSetup.m"; sourceTree = "<group>"; };
+		4B34B939205269F8005B1CC7 /* FFCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFCategories.h; sourceTree = "<group>"; };
+		4B34B93C20526D88005B1CC7 /* REDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDBaseViewController.h; sourceTree = "<group>"; };
+		4B34B93D20526D88005B1CC7 /* REDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDBaseViewController.m; sourceTree = "<group>"; };
+		4B34B93F20526DA8005B1CC7 /* REDBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDBaseNavigationController.h; sourceTree = "<group>"; };
+		4B34B94020526DA8005B1CC7 /* REDBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDBaseNavigationController.m; sourceTree = "<group>"; };
+		4B34B94220526DD5005B1CC7 /* REDBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDBaseTabBarController.h; sourceTree = "<group>"; };
+		4B34B94320526DD5005B1CC7 /* REDBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDBaseTabBarController.m; sourceTree = "<group>"; };
+		4B34B94620526E03005B1CC7 /* REDBaseNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDBaseNavigationBar.h; sourceTree = "<group>"; };
+		4B34B94720526E03005B1CC7 /* REDBaseNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDBaseNavigationBar.m; sourceTree = "<group>"; };
+		4B34B94C20526E6B005B1CC7 /* REDHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDHomeViewController.h; sourceTree = "<group>"; };
+		4B34B94D20526E6B005B1CC7 /* REDHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDHomeViewController.m; sourceTree = "<group>"; };
+		4B34B95020526E7F005B1CC7 /* REDMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDMineViewController.h; sourceTree = "<group>"; };
+		4B34B95120526E7F005B1CC7 /* REDMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDMineViewController.m; sourceTree = "<group>"; };
+		4B34B95320526ED9005B1CC7 /* REDRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDRootViewController.h; sourceTree = "<group>"; };
+		4B34B95420526ED9005B1CC7 /* REDRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDRootViewController.m; sourceTree = "<group>"; };
+		4B34B95620526F72005B1CC7 /* REDMineNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDMineNavigationController.h; sourceTree = "<group>"; };
+		4B34B95720526F72005B1CC7 /* REDMineNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDMineNavigationController.m; sourceTree = "<group>"; };
+		4B34B95920526F81005B1CC7 /* REDHomeNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDHomeNavigationController.h; sourceTree = "<group>"; };
+		4B34B95A20526F81005B1CC7 /* REDHomeNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDHomeNavigationController.m; sourceTree = "<group>"; };
+		4B493F132057CC75004EE319 /* AppDelegate+FFNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+FFNotification.h"; sourceTree = "<group>"; };
+		4B493F142057CC75004EE319 /* AppDelegate+FFNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+FFNotification.m"; sourceTree = "<group>"; };
+		4B493F172057D236004EE319 /* FFNoticeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFNoticeManager.h; sourceTree = "<group>"; };
+		4B493F182057D236004EE319 /* FFNoticeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFNoticeManager.m; sourceTree = "<group>"; };
+		669E15AEA25A4C6218D06DD4 /* Pods-Red.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red.release.xcconfig"; path = "Pods/Target Support Files/Pods-Red/Pods-Red.release.xcconfig"; sourceTree = "<group>"; };
+		C963F1E2C6AA043661E5C3C4 /* libPods-Red.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Red.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61B89B8C7BF0311A2B0701A9 /* libPods-Red.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +130,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C13E5C052834AAF41715F90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C963F1E2C6AA043661E5C3C4 /* libPods-Red.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4B34B8F0205266B6005B1CC7 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +145,8 @@
 				4B34B917205266BA005B1CC7 /* RedTests */,
 				4B34B922205266BC005B1CC7 /* RedUITests */,
 				4B34B8FA205266B6005B1CC7 /* Products */,
+				5A662721938754D2CF0E2284 /* Pods */,
+				3C13E5C052834AAF41715F90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,16 +163,19 @@
 		4B34B8FB205266B7005B1CC7 /* Red */ = {
 			isa = PBXGroup;
 			children = (
+				4B493F162057D20A004EE319 /* NoticeUtil */,
+				4B493F0F2057B784004EE319 /* UserUtil */,
+				4B34B95E205276AB005B1CC7 /* NetworkUtil */,
+				4B34B93A20526C60005B1CC7 /* MVCs */,
+				4B34B9322052689E005B1CC7 /* Categories */,
 				4B34B8FC205266B7005B1CC7 /* AppDelegate.h */,
 				4B34B8FD205266B7005B1CC7 /* AppDelegate.m */,
-				4B34B8FF205266B7005B1CC7 /* ViewController.h */,
-				4B34B900205266B7005B1CC7 /* ViewController.m */,
-				4B34B902205266B8005B1CC7 /* Main.storyboard */,
 				4B34B908205266B9005B1CC7 /* Assets.xcassets */,
 				4B34B90A205266BA005B1CC7 /* LaunchScreen.storyboard */,
 				4B34B90D205266BA005B1CC7 /* Info.plist */,
 				4B34B90E205266BA005B1CC7 /* main.m */,
 				4B34B905205266B8005B1CC7 /* Red.xcdatamodeld */,
+				4B34B93120526717005B1CC7 /* PrefixHeader.pch */,
 			);
 			path = Red;
 			sourceTree = "<group>";
@@ -135,6 +198,163 @@
 			path = RedUITests;
 			sourceTree = "<group>";
 		};
+		4B34B9322052689E005B1CC7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4B34B9332052692E005B1CC7 /* AppDelegate+FFRegister.h */,
+				4B34B9342052692E005B1CC7 /* AppDelegate+FFRegister.m */,
+				4B34B93620526967005B1CC7 /* AppDelegate+FFSetup.h */,
+				4B34B93720526967005B1CC7 /* AppDelegate+FFSetup.m */,
+				4B34B939205269F8005B1CC7 /* FFCategories.h */,
+				4B493F132057CC75004EE319 /* AppDelegate+FFNotification.h */,
+				4B493F142057CC75004EE319 /* AppDelegate+FFNotification.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4B34B93A20526C60005B1CC7 /* MVCs */ = {
+			isa = PBXGroup;
+			children = (
+				4B493F1A2057DA0A004EE319 /* Root */,
+				4B34B95C20526FC0005B1CC7 /* Bases */,
+				4B34B94A20526E34005B1CC7 /* Mine */,
+				4B34B94920526E2F005B1CC7 /* Home */,
+			);
+			path = MVCs;
+			sourceTree = "<group>";
+		};
+		4B34B93B20526D2C005B1CC7 /* BaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B34B93C20526D88005B1CC7 /* REDBaseViewController.h */,
+				4B34B93D20526D88005B1CC7 /* REDBaseViewController.m */,
+				4B34B93F20526DA8005B1CC7 /* REDBaseNavigationController.h */,
+				4B34B94020526DA8005B1CC7 /* REDBaseNavigationController.m */,
+				4B34B94220526DD5005B1CC7 /* REDBaseTabBarController.h */,
+				4B34B94320526DD5005B1CC7 /* REDBaseTabBarController.m */,
+			);
+			path = BaseControllers;
+			sourceTree = "<group>";
+		};
+		4B34B94520526DDC005B1CC7 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				4B34B94620526E03005B1CC7 /* REDBaseNavigationBar.h */,
+				4B34B94720526E03005B1CC7 /* REDBaseNavigationBar.m */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		4B34B94920526E2F005B1CC7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4B34B94B20526E46005B1CC7 /* Controllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4B34B94A20526E34005B1CC7 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				4B34B94F20526E72005B1CC7 /* Controllers */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		4B34B94B20526E46005B1CC7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B34B94C20526E6B005B1CC7 /* REDHomeViewController.h */,
+				4B34B94D20526E6B005B1CC7 /* REDHomeViewController.m */,
+				4B34B95920526F81005B1CC7 /* REDHomeNavigationController.h */,
+				4B34B95A20526F81005B1CC7 /* REDHomeNavigationController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4B34B94F20526E72005B1CC7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B34B95020526E7F005B1CC7 /* REDMineViewController.h */,
+				4B34B95120526E7F005B1CC7 /* REDMineViewController.m */,
+				4B34B95620526F72005B1CC7 /* REDMineNavigationController.h */,
+				4B34B95720526F72005B1CC7 /* REDMineNavigationController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4B34B95C20526FC0005B1CC7 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				4B34B94520526DDC005B1CC7 /* BaseViews */,
+				4B34B93B20526D2C005B1CC7 /* BaseControllers */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		4B34B95E205276AB005B1CC7 /* NetworkUtil */ = {
+			isa = PBXGroup;
+			children = (
+				4B34B960205276DE005B1CC7 /* Socket */,
+				4B34B95F205276D5005B1CC7 /* Http */,
+			);
+			path = NetworkUtil;
+			sourceTree = "<group>";
+		};
+		4B34B95F205276D5005B1CC7 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				4B1B583920529EAD002CAE83 /* FFHttpManager.h */,
+				4B1B583A20529EAD002CAE83 /* FFHttpManager.m */,
+				4B1B583C2052A204002CAE83 /* FFHttpBaseService.h */,
+				4B1B583D2052A204002CAE83 /* FFHttpBaseService.m */,
+				4B1B583F2052A460002CAE83 /* FFHttpService.h */,
+				4B1B58402052A460002CAE83 /* FFHttpService.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		4B34B960205276DE005B1CC7 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		4B493F0F2057B784004EE319 /* UserUtil */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserUtil;
+			sourceTree = "<group>";
+		};
+		4B493F162057D20A004EE319 /* NoticeUtil */ = {
+			isa = PBXGroup;
+			children = (
+				4B493F172057D236004EE319 /* FFNoticeManager.h */,
+				4B493F182057D236004EE319 /* FFNoticeManager.m */,
+			);
+			path = NoticeUtil;
+			sourceTree = "<group>";
+		};
+		4B493F1A2057DA0A004EE319 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				4B34B95320526ED9005B1CC7 /* REDRootViewController.h */,
+				4B34B95420526ED9005B1CC7 /* REDRootViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5A662721938754D2CF0E2284 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32E5FEC7989FD4AE82FC06B3 /* Pods-Red.debug.xcconfig */,
+				669E15AEA25A4C6218D06DD4 /* Pods-Red.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +362,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B34B928205266BC005B1CC7 /* Build configuration list for PBXNativeTarget "Red" */;
 			buildPhases = (
+				674D30280125AE20F85D7A18 /* [CP] Check Pods Manifest.lock */,
 				4B34B8F5205266B6005B1CC7 /* Sources */,
 				4B34B8F6205266B6005B1CC7 /* Frameworks */,
 				4B34B8F7205266B6005B1CC7 /* Resources */,
+				AC0B84D02DFDEF53CC51AFA3 /* [CP] Embed Pods Frameworks */,
+				9946F1004534D569640662BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,7 +465,6 @@
 			files = (
 				4B34B90C205266BA005B1CC7 /* LaunchScreen.storyboard in Resources */,
 				4B34B909205266B9005B1CC7 /* Assets.xcassets in Resources */,
-				4B34B904205266B8005B1CC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,15 +484,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		674D30280125AE20F85D7A18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Red-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9946F1004534D569640662BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Red/Pods-Red-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundError.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundError@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundErrorIcon.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundErrorIcon@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundMessage.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundMessage@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccess.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccess@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarning.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarning@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarningIcon.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarningIcon@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationButtonBackground.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationButtonBackground@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/TSMessagesDefaultDesign.json",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundError.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundError@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundErrorIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundErrorIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundMessage.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundMessage@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundSuccess.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundSuccess@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundSuccessIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundSuccessIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundWarning.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundWarning@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundWarningIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundWarningIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationButtonBackground.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationButtonBackground@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TSMessagesDefaultDesign.json",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Red/Pods-Red-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC0B84D02DFDEF53CC51AFA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Red/Pods-Red-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B34B8F5205266B6005B1CC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B34B901205266B7005B1CC7 /* ViewController.m in Sources */,
+				4B493F192057D236004EE319 /* FFNoticeManager.m in Sources */,
+				4B1B583B20529EAD002CAE83 /* FFHttpManager.m in Sources */,
+				4B34B95520526ED9005B1CC7 /* REDRootViewController.m in Sources */,
+				4B34B93820526967005B1CC7 /* AppDelegate+FFSetup.m in Sources */,
 				4B34B8FE205266B7005B1CC7 /* AppDelegate.m in Sources */,
+				4B34B94820526E03005B1CC7 /* REDBaseNavigationBar.m in Sources */,
+				4B34B95B20526F81005B1CC7 /* REDHomeNavigationController.m in Sources */,
+				4B1B583E2052A204002CAE83 /* FFHttpBaseService.m in Sources */,
+				4B493F152057CC75004EE319 /* AppDelegate+FFNotification.m in Sources */,
+				4B34B95220526E7F005B1CC7 /* REDMineViewController.m in Sources */,
+				4B34B94420526DD5005B1CC7 /* REDBaseTabBarController.m in Sources */,
+				4B34B94120526DA8005B1CC7 /* REDBaseNavigationController.m in Sources */,
 				4B34B90F205266BA005B1CC7 /* main.m in Sources */,
+				4B34B93E20526D88005B1CC7 /* REDBaseViewController.m in Sources */,
 				4B34B907205266B9005B1CC7 /* Red.xcdatamodeld in Sources */,
+				4B34B9352052692E005B1CC7 /* AppDelegate+FFRegister.m in Sources */,
+				4B1B58412052A460002CAE83 /* FFHttpService.m in Sources */,
+				4B34B94E20526E6B005B1CC7 /* REDHomeViewController.m in Sources */,
+				4B34B95820526F72005B1CC7 /* REDMineNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,14 +631,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4B34B902205266B8005B1CC7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B34B903205266B8005B1CC7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4B34B90A205266BA005B1CC7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -431,27 +748,33 @@
 		};
 		4B34B929205266BC005B1CC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E5FEC7989FD4AE82FC06B3 /* Pods-Red.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Red/PrefixHeader.pch";
 				INFOPLIST_FILE = Red/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ch.Red;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4B34B92A205266BC005B1CC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 669E15AEA25A4C6218D06DD4 /* Pods-Red.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Red/PrefixHeader.pch";
 				INFOPLIST_FILE = Red/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ch.Red;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

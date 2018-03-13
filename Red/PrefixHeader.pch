@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  Red
+//
+//  Created by 郭赞华 on 2018/3/9.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//一些宏定义
+
+#define FFWeakSelf(ws)  __weak __typeof(&*self)ws = self;
+#define FFStrongSelf(ws)  __strong __typeof(&*self)ws = self;
+
+//一些宏定义
+
+#import "FFCategories.h"
+
+#import "Masonry/Masonry.h"
+#import "YYModel/YYModel.h"
+
+#import "FFHttpManager.h"
+#import "FFHttpBaseService.h"
+#import "FFHttpService.h"
+
+#endif /* PrefixHeader_pch */
