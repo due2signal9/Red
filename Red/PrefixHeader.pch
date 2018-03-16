@@ -9,11 +9,30 @@
 #define PrefixHeader_pch
 
 //一些宏定义
-
 #define FFWeakSelf(ws)  __weak __typeof(&*self)ws = self;
 #define FFStrongSelf(ws)  __strong __typeof(&*self)ws = self;
 
-//一些宏定义
+#define FF_HW_RATIO (667/375)
+
+//RELATIVE ABSOLUTE 用于区分横屏下的绝对长宽
+#define FF_RELATIVE_SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define FF_RELATIVE_SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#define FF_ABSOLUTE_SCREEN_WIDTH min(FF_RELATIVE_SCREEN_WIDTH, FF_RELATIVE_SCREEN_HEIGHT)
+#define FF_ABSOLUTE_SCREEN_HEIGHT max(FF_RELATIVE_SCREEN_WIDTH, FF_RELATIVE_SCREEN_HEIGHT)
+
+//判断设备
+#define FF_IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define FF_IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+//判断真机或模拟器
+#if (TARGET_IPHONE_SIMULATOR) //模拟器
+#define FF_IS_SIMULATOR 1
+#else //真机
+#define FF_IS_SIMULATOR 0
+#endif
+
+//common
 
 #import "FFCategories.h"
 

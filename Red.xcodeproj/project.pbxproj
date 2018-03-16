@@ -30,6 +30,10 @@
 		4B34B95B20526F81005B1CC7 /* REDHomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B95A20526F81005B1CC7 /* REDHomeNavigationController.m */; };
 		4B493F152057CC75004EE319 /* AppDelegate+FFNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B493F142057CC75004EE319 /* AppDelegate+FFNotification.m */; };
 		4B493F192057D236004EE319 /* FFNoticeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B493F182057D236004EE319 /* FFNoticeManager.m */; };
+		4BE4113E205B7C68000F9EE2 /* FFPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4113D205B7C68000F9EE2 /* FFPathManager.m */; };
+		4BE41142205B807F000F9EE2 /* FFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE41141205B807F000F9EE2 /* FFCacheManager.m */; };
+		4BE41148205B82C8000F9EE2 /* NSString+FFEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE41147205B82C8000F9EE2 /* NSString+FFEncrypt.m */; };
+		4BE4114B205B8F05000F9EE2 /* NSData+FFEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4114A205B8F05000F9EE2 /* NSData+FFEncrypt.m */; };
 		61B89B8C7BF0311A2B0701A9 /* libPods-Red.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C963F1E2C6AA043661E5C3C4 /* libPods-Red.a */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +104,14 @@
 		4B493F142057CC75004EE319 /* AppDelegate+FFNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+FFNotification.m"; sourceTree = "<group>"; };
 		4B493F172057D236004EE319 /* FFNoticeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFNoticeManager.h; sourceTree = "<group>"; };
 		4B493F182057D236004EE319 /* FFNoticeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFNoticeManager.m; sourceTree = "<group>"; };
+		4BE4113C205B7C68000F9EE2 /* FFPathManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPathManager.h; sourceTree = "<group>"; };
+		4BE4113D205B7C68000F9EE2 /* FFPathManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPathManager.m; sourceTree = "<group>"; };
+		4BE41140205B807F000F9EE2 /* FFCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFCacheManager.h; sourceTree = "<group>"; };
+		4BE41141205B807F000F9EE2 /* FFCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFCacheManager.m; sourceTree = "<group>"; };
+		4BE41146205B82C8000F9EE2 /* NSString+FFEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FFEncrypt.h"; sourceTree = "<group>"; };
+		4BE41147205B82C8000F9EE2 /* NSString+FFEncrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FFEncrypt.m"; sourceTree = "<group>"; };
+		4BE41149205B8F05000F9EE2 /* NSData+FFEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+FFEncrypt.h"; sourceTree = "<group>"; };
+		4BE4114A205B8F05000F9EE2 /* NSData+FFEncrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+FFEncrypt.m"; sourceTree = "<group>"; };
 		669E15AEA25A4C6218D06DD4 /* Pods-Red.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red.release.xcconfig"; path = "Pods/Target Support Files/Pods-Red/Pods-Red.release.xcconfig"; sourceTree = "<group>"; };
 		C963F1E2C6AA043661E5C3C4 /* libPods-Red.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Red.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -163,6 +175,8 @@
 		4B34B8FB205266B7005B1CC7 /* Red */ = {
 			isa = PBXGroup;
 			children = (
+				4BE4113F205B7FB4000F9EE2 /* CacheUtil */,
+				4BE4113B205B7C36000F9EE2 /* PathUtil */,
 				4B493F162057D20A004EE319 /* NoticeUtil */,
 				4B493F0F2057B784004EE319 /* UserUtil */,
 				4B34B95E205276AB005B1CC7 /* NetworkUtil */,
@@ -208,6 +222,10 @@
 				4B34B939205269F8005B1CC7 /* FFCategories.h */,
 				4B493F132057CC75004EE319 /* AppDelegate+FFNotification.h */,
 				4B493F142057CC75004EE319 /* AppDelegate+FFNotification.m */,
+				4BE41146205B82C8000F9EE2 /* NSString+FFEncrypt.h */,
+				4BE41147205B82C8000F9EE2 /* NSString+FFEncrypt.m */,
+				4BE41149205B8F05000F9EE2 /* NSData+FFEncrypt.h */,
+				4BE4114A205B8F05000F9EE2 /* NSData+FFEncrypt.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -344,6 +362,24 @@
 				4B34B95420526ED9005B1CC7 /* REDRootViewController.m */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		4BE4113B205B7C36000F9EE2 /* PathUtil */ = {
+			isa = PBXGroup;
+			children = (
+				4BE4113C205B7C68000F9EE2 /* FFPathManager.h */,
+				4BE4113D205B7C68000F9EE2 /* FFPathManager.m */,
+			);
+			path = PathUtil;
+			sourceTree = "<group>";
+		};
+		4BE4113F205B7FB4000F9EE2 /* CacheUtil */ = {
+			isa = PBXGroup;
+			children = (
+				4BE41140205B807F000F9EE2 /* FFCacheManager.h */,
+				4BE41141205B807F000F9EE2 /* FFCacheManager.m */,
+			);
+			path = CacheUtil;
 			sourceTree = "<group>";
 		};
 		5A662721938754D2CF0E2284 /* Pods */ = {
@@ -579,18 +615,22 @@
 			files = (
 				4B493F192057D236004EE319 /* FFNoticeManager.m in Sources */,
 				4B1B583B20529EAD002CAE83 /* FFHttpManager.m in Sources */,
+				4BE4114B205B8F05000F9EE2 /* NSData+FFEncrypt.m in Sources */,
 				4B34B95520526ED9005B1CC7 /* REDRootViewController.m in Sources */,
 				4B34B93820526967005B1CC7 /* AppDelegate+FFSetup.m in Sources */,
 				4B34B8FE205266B7005B1CC7 /* AppDelegate.m in Sources */,
+				4BE41148205B82C8000F9EE2 /* NSString+FFEncrypt.m in Sources */,
 				4B34B94820526E03005B1CC7 /* REDBaseNavigationBar.m in Sources */,
 				4B34B95B20526F81005B1CC7 /* REDHomeNavigationController.m in Sources */,
 				4B1B583E2052A204002CAE83 /* FFHttpBaseService.m in Sources */,
+				4BE41142205B807F000F9EE2 /* FFCacheManager.m in Sources */,
 				4B493F152057CC75004EE319 /* AppDelegate+FFNotification.m in Sources */,
 				4B34B95220526E7F005B1CC7 /* REDMineViewController.m in Sources */,
 				4B34B94420526DD5005B1CC7 /* REDBaseTabBarController.m in Sources */,
 				4B34B94120526DA8005B1CC7 /* REDBaseNavigationController.m in Sources */,
 				4B34B90F205266BA005B1CC7 /* main.m in Sources */,
 				4B34B93E20526D88005B1CC7 /* REDBaseViewController.m in Sources */,
+				4BE4113E205B7C68000F9EE2 /* FFPathManager.m in Sources */,
 				4B34B907205266B9005B1CC7 /* Red.xcdatamodeld in Sources */,
 				4B34B9352052692E005B1CC7 /* AppDelegate+FFRegister.m in Sources */,
 				4B1B58412052A460002CAE83 /* FFHttpService.m in Sources */,

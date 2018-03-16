@@ -11,5 +11,7 @@
 #import "AppDelegate+FFRegister.h"
 #import "AppDelegate+FFSetup.h"
 #import "AppDelegate+FFNotification.h"
+#import "NSData+FFEncrypt.h"
+#import "NSString+FFEncrypt.h"
 
 #endif /* FFCategories_h */
