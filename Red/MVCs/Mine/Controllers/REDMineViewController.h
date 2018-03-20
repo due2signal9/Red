@@ -6,7 +6,11 @@
 //
 
 #import "REDBaseViewController.h"
+#import "REDMineTopView.h"
 
-@interface REDMineViewController : REDBaseViewController <UINavigationControllerDelegate>
+@interface REDMineViewController : REDBaseViewController <UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource>
+
+@property(nonatomic, strong) REDMineTopView *topView;
+@property(nonatomic, strong) UITableView *tableView;
 
 @end
