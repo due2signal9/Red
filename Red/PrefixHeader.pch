@@ -18,8 +18,8 @@
 #define FF_RELATIVE_SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define FF_RELATIVE_SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
-#define FF_ABSOLUTE_SCREEN_WIDTH min(FF_RELATIVE_SCREEN_WIDTH, FF_RELATIVE_SCREEN_HEIGHT)
-#define FF_ABSOLUTE_SCREEN_HEIGHT max(FF_RELATIVE_SCREEN_WIDTH, FF_RELATIVE_SCREEN_HEIGHT)
+#define FF_ABSOLUTE_SCREEN_WIDTH (FF_RELATIVE_SCREEN_WIDTH < FF_RELATIVE_SCREEN_HEIGHT ? FF_RELATIVE_SCREEN_WIDTH : FF_RELATIVE_SCREEN_HEIGHT)
+#define FF_ABSOLUTE_SCREEN_HEIGHT (FF_RELATIVE_SCREEN_WIDTH > FF_RELATIVE_SCREEN_HEIGHT ? FF_RELATIVE_SCREEN_WIDTH : FF_RELATIVE_SCREEN_HEIGHT)
 
 //判断设备
 #define FF_IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
@@ -36,8 +36,12 @@
 
 #import "FFCategories.h"
 
+#import "HexColors/HexColor.h"
 #import "Masonry/Masonry.h"
 #import "YYModel/YYModel.h"
+#import "REFrostedViewController/REFrostedViewController.h"
+#import "REFrostedViewController/UIViewController+REFrostedViewController.h"
+#import "REFrostedViewController/REFrostedContainerViewController.h"
 
 #import "NetworkUtil/Http/FFHttpManager.h"
 #import "NetworkUtil/Http/FFHttpService.h"

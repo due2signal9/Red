@@ -20,6 +20,7 @@ PODS:
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.15.3)
   - Reachability (3.2)
+  - REFrostedViewController (2.4.8)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
   - SDWebImage (4.3.2):
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - MBProgressHUD
   - MJRefresh
   - Reachability
+  - REFrostedViewController
   - SDCycleScrollView
   - SDWebImage
   - TSMessages
@@ -49,11 +51,12 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
   TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: e687e52638e66694743dce5ee9ad21f9dd8286d6
+PODFILE CHECKSUM: f19c8cdceb0c3f18f6fb642b0f5f4b131c07f33d
 
 COCOAPODS: 1.4.0

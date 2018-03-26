@@ -15,6 +15,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[[self navigationController] navigationBar] setBarTintColor: [UIColor colorWithHexString: @"008B00"]];
     // Do any additional setup after loading the view.
 }
 

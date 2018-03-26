@@ -30,6 +30,7 @@
 		4B34B95B20526F81005B1CC7 /* REDHomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B95A20526F81005B1CC7 /* REDHomeNavigationController.m */; };
 		4B493F152057CC75004EE319 /* AppDelegate+FFNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B493F142057CC75004EE319 /* AppDelegate+FFNotification.m */; };
 		4B493F192057D236004EE319 /* FFNoticeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B493F182057D236004EE319 /* FFNoticeManager.m */; };
+		4B58B00C2068FBFD00755252 /* HomeCateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B58B00B2068FBFD00755252 /* HomeCateTableViewCell.m */; };
 		4BE4113E205B7C68000F9EE2 /* FFPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4113D205B7C68000F9EE2 /* FFPathManager.m */; };
 		4BE41142205B807F000F9EE2 /* FFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE41141205B807F000F9EE2 /* FFCacheManager.m */; };
 		4BE41148205B82C8000F9EE2 /* NSString+FFEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE41147205B82C8000F9EE2 /* NSString+FFEncrypt.m */; };
@@ -106,6 +107,8 @@
 		4B493F142057CC75004EE319 /* AppDelegate+FFNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+FFNotification.m"; sourceTree = "<group>"; };
 		4B493F172057D236004EE319 /* FFNoticeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFNoticeManager.h; sourceTree = "<group>"; };
 		4B493F182057D236004EE319 /* FFNoticeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFNoticeManager.m; sourceTree = "<group>"; };
+		4B58B00A2068FBFD00755252 /* HomeCateTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCateTableViewCell.h; sourceTree = "<group>"; };
+		4B58B00B2068FBFD00755252 /* HomeCateTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCateTableViewCell.m; sourceTree = "<group>"; };
 		4BE4113C205B7C68000F9EE2 /* FFPathManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPathManager.h; sourceTree = "<group>"; };
 		4BE4113D205B7C68000F9EE2 /* FFPathManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPathManager.m; sourceTree = "<group>"; };
 		4BE41140205B807F000F9EE2 /* FFCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFCacheManager.h; sourceTree = "<group>"; };
@@ -272,6 +275,7 @@
 		4B34B94920526E2F005B1CC7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4B58B0092068FB4000755252 /* Views */,
 				4B34B94B20526E46005B1CC7 /* Controllers */,
 			);
 			path = Home;
@@ -370,6 +374,15 @@
 				4B34B95420526ED9005B1CC7 /* REDRootViewController.m */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		4B58B0092068FB4000755252 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B58B00A2068FBFD00755252 /* HomeCateTableViewCell.h */,
+				4B58B00B2068FBFD00755252 /* HomeCateTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		4BE4113B205B7C36000F9EE2 /* PathUtil */ = {
@@ -648,6 +661,7 @@
 				4BFB23032060B5A500C64E25 /* REDMineTopView.m in Sources */,
 				4B34B8FE205266B7005B1CC7 /* AppDelegate.m in Sources */,
 				4BE41148205B82C8000F9EE2 /* NSString+FFEncrypt.m in Sources */,
+				4B58B00C2068FBFD00755252 /* HomeCateTableViewCell.m in Sources */,
 				4B34B94820526E03005B1CC7 /* REDBaseNavigationBar.m in Sources */,
 				4B34B95B20526F81005B1CC7 /* REDHomeNavigationController.m in Sources */,
 				4B1B583E2052A204002CAE83 /* FFHttpBaseService.m in Sources */,
@@ -819,13 +833,17 @@
 			baseConfigurationReference = 32E5FEC7989FD4AE82FC06B3 /* Pods-Red.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P942W4H57;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Red/PrefixHeader.pch";
 				INFOPLIST_FILE = Red/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ch.Red;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -835,13 +853,17 @@
 			baseConfigurationReference = 669E15AEA25A4C6218D06DD4 /* Pods-Red.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P942W4H57;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Red/PrefixHeader.pch";
 				INFOPLIST_FILE = Red/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ch.Red;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

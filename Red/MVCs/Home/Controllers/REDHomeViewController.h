@@ -7,6 +7,8 @@
 
 #import "REDBaseViewController.h"
 
-@interface REDHomeViewController : REDBaseViewController
+@interface REDHomeViewController : REDBaseViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property(strong, nonatomic) UITableView *tableView;
 
 @end

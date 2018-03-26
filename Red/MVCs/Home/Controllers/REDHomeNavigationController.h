@@ -7,6 +7,6 @@
 
 #import "REDBaseNavigationController.h"
 
-@interface REDHomeNavigationController : REDBaseNavigationController
+@interface REDHomeNavigationController : REDBaseNavigationController <REFrostedViewControllerDelegate>
 
 @end

@@ -6,9 +6,10 @@ target 'Red' do
     pod 'Reachability'
     pod 'MBProgressHUD'
     pod 'YYModel'
-    pod 'YYText'
+   # pod 'YYText'
     pod 'MJRefresh'
     pod 'DZNEmptyDataSet'
     pod 'SDCycleScrollView'
     pod 'TSMessages'
+    pod 'REFrostedViewController'
 end

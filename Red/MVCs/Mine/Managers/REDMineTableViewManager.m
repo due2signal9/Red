@@ -11,46 +11,49 @@
 
 + (NSArray *)sectionInfos {
     
-    return @[
-  @[
-      @{
-          @"controller": nil
-          
-          },
-      @{
-          @"controller": nil
-          
-          },
-      @{
-          @"controller": nil
-          
-          }
-      ],
-  @[
-      @{
-          @"controller": nil
-          
-          },
-      @{
-          @"controller": nil
-          
-          }
-      ],
-  @[
-      @{
-          @"controller": nil
-          
-          },
-      @{
-          @"controller": nil
-          
-          }
-      ]
-  ];
+//    return @[
+//  @[
+//      @{
+//          @"controller": @""
+//
+//          },
+//      @{
+//          @"controller": @""
+//
+//          },
+//      @{
+//          @"controller": @""
+//
+//          }
+//      ],
+//  @[
+//      @{
+//          @"controller": @""
+//
+//          },
+//      @{
+//          @"controller": @""
+//
+//          }
+//      ],
+//  @[
+//      @{
+//          @"controller": @""
+//
+//          },
+//      @{
+//          @"controller": @""
+//
+//          }
+//      ]
+//  ];
+    
+    return nil;
 }
 
 + (UITableViewCell *)generateCellWithIndexPath:(NSIndexPath *)indexPath {
     
+    return nil;
 }
 
 + (NSDictionary *)getCellInfo:(NSIndexPath *)indexPath {

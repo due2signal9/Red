@@ -23,6 +23,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)frostedViewController:(REFrostedViewController *)frostedViewController willShowMenuViewController:(UIViewController *)menuViewController {
+    
+    self.tabBarController.tabBar.hidden = YES;
+}
+
+- (void)frostedViewController:(REFrostedViewController *)frostedViewController didHideMenuViewController:(UIViewController *)menuViewController {
+    
+    self.tabBarController.tabBar.hidden = NO;
+}
+
 /*
 #pragma mark - Navigation
 
