@@ -2,3 +2,10 @@
 Podfile.lock
 Podfile.lock
 Pods/Manifest.lock
+Podfile.lock
+Pods/Headers/Private/YYCategories/CALayer+YYAdd.h
+Pods/Headers/Private/YYCategories/NSArray+YYAdd.h
+Pods/Headers/Private/YYCategories/NSBundle+YYAdd.h
+Pods/Headers/Private/YYCategories/NSData+YYAdd.h
+Pods/Headers/Private/YYCategories/NSDate+YYAdd.h
+Pods/Headers/Private/YYCategories/NSDictionary+YYAdd.h

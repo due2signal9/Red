@@ -39,6 +39,8 @@
 #import "HexColors/HexColor.h"
 #import "Masonry/Masonry.h"
 #import "YYModel/YYModel.h"
+#import "YYCategories/YYCategories.h"
+#import "MBProgressHUD/MBProgressHUD.h"
 #import "DZNEmptyDataSet/UIScrollView+EmptyDataSet.h"
 #import "REFrostedViewController/REFrostedViewController.h"
 #import "REFrostedViewController/UIViewController+REFrostedViewController.h"
@@ -47,6 +49,7 @@
 #import "NetworkUtil/Http/FFHttpManager.h"
 #import "NetworkUtil/Http/FFHttpService.h"
 #import "NoticeUtil/FFNoticeManager.h"
+#import "CommonUtil/FFCommonManager.h"
 #import "CacheUtil/FFCacheManager.h"
 #import "PathUtil/FFPathManager.h"
 

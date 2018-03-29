@@ -10,10 +10,12 @@
 
 @interface FFNoticeManager : NSObject
 
-+ (FFNoticeManager *)sharedManager;
-- (void)showTsNoticeWithMessage: (NSString *)message type: (TSMessageNotificationType)type;
-- (void)showTsNoticeWithMessage: (NSString *)message type: (TSMessageNotificationType)type duration: (NSTimeInterval)duration;
-- (void)showTsNoticeWithTitle: (NSString *)title message: (NSString *)message type: (TSMessageNotificationType)type;
-- (void)showTsNoticeWithTitle: (NSString *)title message: (NSString *)message type: (TSMessageNotificationType)type duration: (NSTimeInterval)duration;
+//+ (FFNoticeManager *)sharedManager;
++ (void)showTsNoticeWithMessage: (NSString *)message type: (TSMessageNotificationType)type;
++ (void)showTsNoticeWithMessage: (NSString *)message type: (TSMessageNotificationType)type duration: (NSTimeInterval)duration;
++ (void)showTsNoticeWithTitle: (NSString *)title message: (NSString *)message type: (TSMessageNotificationType)type;
++ (void)showTsNoticeWithTitle: (NSString *)title message: (NSString *)message type: (TSMessageNotificationType)type duration: (NSTimeInterval)duration;
 
++ (void)showHudSuccess:(NSString *)message;
++ (void)showHudError:(id)error;
 @end

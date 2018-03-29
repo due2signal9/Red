@@ -15,9 +15,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [[[self navigationController] navigationBar] setBarTintColor: [UIColor colorWithHexString: @"008B00"]];
+
     // Do any additional setup after loading the view.
+}
+
+- (void)initNavigationBar {
+    
+    [[[self navigationController] navigationBar] setBarTintColor: [UIColor colorWithHexString: @"ee1d24"]];
+    [[[self navigationController] navigationBar] setTitleTextAttributes: @{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    [[[self navigationController] navigationBar] setTintColor: [UIColor whiteColor]];
+}
+
+-(void)initSubviews {
+    
+    self.automaticallyAdjustsScrollViewInsets = YES;
+}
+
+- (void)setupSubviews {
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

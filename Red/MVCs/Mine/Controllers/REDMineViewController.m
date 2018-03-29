@@ -17,7 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"我的";
+    [self initNavigationBar];
+    [self initSubviews];
+    [self setupSubviews];
     // Do any additional setup after loading the view.
 }
 

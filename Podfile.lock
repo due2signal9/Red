@@ -28,6 +28,9 @@ PODS:
   - SDWebImage/Core (4.3.2)
   - TSMessages (0.9.12):
     - HexColors (~> 2.2.0)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -41,6 +44,7 @@ DEPENDENCIES:
   - SDCycleScrollView
   - SDWebImage
   - TSMessages
+  - YYCategories
   - YYModel
 
 SPEC CHECKSUMS:
@@ -55,8 +59,9 @@ SPEC CHECKSUMS:
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
   TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: dbfcda1d3ef341b098eece082c21fbf9a4a5ab6a
+PODFILE CHECKSUM: 62a03109e93f963ad248e76f914276ef699fc4d2
 
 COCOAPODS: 1.4.0

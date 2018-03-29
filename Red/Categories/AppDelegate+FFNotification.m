@@ -29,25 +29,25 @@
             case NotReachable:
             {
                 
-                [[FFNoticeManager sharedManager] showTsNoticeWithMessage: @"当前无网络状态" type: TSMessageNotificationTypeError duration: 2.0];
+                [FFNoticeManager showTsNoticeWithMessage: @"当前无网络状态" type: TSMessageNotificationTypeError duration: 2.0];
                 break;
             }
             case ReachableViaWiFi:
             {
                 
-                [[FFNoticeManager sharedManager] showTsNoticeWithMessage: @"网络已切换到Wifi状态" type: TSMessageNotificationTypeSuccess duration: 2.0];
+                [FFNoticeManager showTsNoticeWithMessage: @"网络已切换到Wifi状态" type: TSMessageNotificationTypeSuccess duration: 2.0];
                 break;
             }
             case ReachableViaWWAN:
             {
                 
-                [[FFNoticeManager sharedManager] showTsNoticeWithMessage: @"网络已切换到2G/3G/4G状态" type: TSMessageNotificationTypeWarning duration: 2.0];
+                [FFNoticeManager showTsNoticeWithMessage: @"网络已切换到2G/3G/4G状态" type: TSMessageNotificationTypeWarning duration: 2.0];
                 break;
             }
             default:
             {
                 
-                [[FFNoticeManager sharedManager] showTsNoticeWithMessage: @"未识别的网络状态" type: TSMessageNotificationTypeMessage duration: 2.0];
+                [FFNoticeManager showTsNoticeWithMessage: @"未识别的网络状态" type: TSMessageNotificationTypeMessage duration: 2.0];
                 break;
             }
         }

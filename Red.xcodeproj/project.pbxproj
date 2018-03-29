@@ -30,11 +30,13 @@
 		4B34B95B20526F81005B1CC7 /* REDHomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B95A20526F81005B1CC7 /* REDHomeNavigationController.m */; };
 		4B493F152057CC75004EE319 /* AppDelegate+FFNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B493F142057CC75004EE319 /* AppDelegate+FFNotification.m */; };
 		4B493F192057D236004EE319 /* FFNoticeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B493F182057D236004EE319 /* FFNoticeManager.m */; };
-		4B58B00C2068FBFD00755252 /* HomeCateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B58B00B2068FBFD00755252 /* HomeCateTableViewCell.m */; };
 		4BE4113E205B7C68000F9EE2 /* FFPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4113D205B7C68000F9EE2 /* FFPathManager.m */; };
 		4BE41142205B807F000F9EE2 /* FFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE41141205B807F000F9EE2 /* FFCacheManager.m */; };
-		4BE41148205B82C8000F9EE2 /* NSString+FFEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE41147205B82C8000F9EE2 /* NSString+FFEncrypt.m */; };
-		4BE4114B205B8F05000F9EE2 /* NSData+FFEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4114A205B8F05000F9EE2 /* NSData+FFEncrypt.m */; };
+		4BF5E2A2206C8C3F00BF3970 /* REDTopicDetailedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5E2A1206C8C3F00BF3970 /* REDTopicDetailedTableViewCell.m */; };
+		4BF5E2A6206C934000BF3970 /* REDMyTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5E2A5206C934000BF3970 /* REDMyTopicModel.m */; };
+		4BF5E2A9206C997200BF3970 /* REDTopicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5E2A8206C997200BF3970 /* REDTopicDetailViewController.m */; };
+		4BF5E2AC206C9A1A00BF3970 /* REDTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5E2AB206C9A1A00BF3970 /* REDTopicModel.m */; };
+		4BF5E2B0206CD26F00BF3970 /* FFCommonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5E2AF206CD26F00BF3970 /* FFCommonManager.m */; };
 		4BFB23032060B5A500C64E25 /* REDMineTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB23022060B5A500C64E25 /* REDMineTopView.m */; };
 		4BFB23072060C1CD00C64E25 /* REDMineTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB23062060C1CD00C64E25 /* REDMineTableViewManager.m */; };
 		61B89B8C7BF0311A2B0701A9 /* libPods-Red.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C963F1E2C6AA043661E5C3C4 /* libPods-Red.a */; };
@@ -107,16 +109,20 @@
 		4B493F142057CC75004EE319 /* AppDelegate+FFNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+FFNotification.m"; sourceTree = "<group>"; };
 		4B493F172057D236004EE319 /* FFNoticeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFNoticeManager.h; sourceTree = "<group>"; };
 		4B493F182057D236004EE319 /* FFNoticeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFNoticeManager.m; sourceTree = "<group>"; };
-		4B58B00A2068FBFD00755252 /* HomeCateTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCateTableViewCell.h; sourceTree = "<group>"; };
-		4B58B00B2068FBFD00755252 /* HomeCateTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCateTableViewCell.m; sourceTree = "<group>"; };
 		4BE4113C205B7C68000F9EE2 /* FFPathManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPathManager.h; sourceTree = "<group>"; };
 		4BE4113D205B7C68000F9EE2 /* FFPathManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPathManager.m; sourceTree = "<group>"; };
 		4BE41140205B807F000F9EE2 /* FFCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFCacheManager.h; sourceTree = "<group>"; };
 		4BE41141205B807F000F9EE2 /* FFCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFCacheManager.m; sourceTree = "<group>"; };
-		4BE41146205B82C8000F9EE2 /* NSString+FFEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FFEncrypt.h"; sourceTree = "<group>"; };
-		4BE41147205B82C8000F9EE2 /* NSString+FFEncrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FFEncrypt.m"; sourceTree = "<group>"; };
-		4BE41149205B8F05000F9EE2 /* NSData+FFEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+FFEncrypt.h"; sourceTree = "<group>"; };
-		4BE4114A205B8F05000F9EE2 /* NSData+FFEncrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+FFEncrypt.m"; sourceTree = "<group>"; };
+		4BF5E2A0206C8C3F00BF3970 /* REDTopicDetailedTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDTopicDetailedTableViewCell.h; sourceTree = "<group>"; };
+		4BF5E2A1206C8C3F00BF3970 /* REDTopicDetailedTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDTopicDetailedTableViewCell.m; sourceTree = "<group>"; };
+		4BF5E2A4206C934000BF3970 /* REDMyTopicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDMyTopicModel.h; sourceTree = "<group>"; };
+		4BF5E2A5206C934000BF3970 /* REDMyTopicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDMyTopicModel.m; sourceTree = "<group>"; };
+		4BF5E2A7206C997200BF3970 /* REDTopicDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDTopicDetailViewController.h; sourceTree = "<group>"; };
+		4BF5E2A8206C997200BF3970 /* REDTopicDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDTopicDetailViewController.m; sourceTree = "<group>"; };
+		4BF5E2AA206C9A1A00BF3970 /* REDTopicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDTopicModel.h; sourceTree = "<group>"; };
+		4BF5E2AB206C9A1A00BF3970 /* REDTopicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDTopicModel.m; sourceTree = "<group>"; };
+		4BF5E2AE206CD26F00BF3970 /* FFCommonManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFCommonManager.h; sourceTree = "<group>"; };
+		4BF5E2AF206CD26F00BF3970 /* FFCommonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFCommonManager.m; sourceTree = "<group>"; };
 		4BFB23012060B5A500C64E25 /* REDMineTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDMineTopView.h; sourceTree = "<group>"; };
 		4BFB23022060B5A500C64E25 /* REDMineTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDMineTopView.m; sourceTree = "<group>"; };
 		4BFB23052060C1CD00C64E25 /* REDMineTableViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDMineTableViewManager.h; sourceTree = "<group>"; };
@@ -184,6 +190,7 @@
 		4B34B8FB205266B7005B1CC7 /* Red */ = {
 			isa = PBXGroup;
 			children = (
+				4BF5E2AD206CD23F00BF3970 /* CommonUtil */,
 				4BE4113F205B7FB4000F9EE2 /* CacheUtil */,
 				4BE4113B205B7C36000F9EE2 /* PathUtil */,
 				4B493F162057D20A004EE319 /* NoticeUtil */,
@@ -231,10 +238,6 @@
 				4B34B939205269F8005B1CC7 /* FFCategories.h */,
 				4B493F132057CC75004EE319 /* AppDelegate+FFNotification.h */,
 				4B493F142057CC75004EE319 /* AppDelegate+FFNotification.m */,
-				4BE41146205B82C8000F9EE2 /* NSString+FFEncrypt.h */,
-				4BE41147205B82C8000F9EE2 /* NSString+FFEncrypt.m */,
-				4BE41149205B8F05000F9EE2 /* NSData+FFEncrypt.h */,
-				4BE4114A205B8F05000F9EE2 /* NSData+FFEncrypt.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 		4B34B94920526E2F005B1CC7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4BF5E2A3206C932900BF3970 /* Models */,
 				4B58B0092068FB4000755252 /* Views */,
 				4B34B94B20526E46005B1CC7 /* Controllers */,
 			);
@@ -298,6 +302,8 @@
 				4B34B94D20526E6B005B1CC7 /* REDHomeViewController.m */,
 				4B34B95920526F81005B1CC7 /* REDHomeNavigationController.h */,
 				4B34B95A20526F81005B1CC7 /* REDHomeNavigationController.m */,
+				4BF5E2A7206C997200BF3970 /* REDTopicDetailViewController.h */,
+				4BF5E2A8206C997200BF3970 /* REDTopicDetailViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -379,8 +385,8 @@
 		4B58B0092068FB4000755252 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4B58B00A2068FBFD00755252 /* HomeCateTableViewCell.h */,
-				4B58B00B2068FBFD00755252 /* HomeCateTableViewCell.m */,
+				4BF5E2A0206C8C3F00BF3970 /* REDTopicDetailedTableViewCell.h */,
+				4BF5E2A1206C8C3F00BF3970 /* REDTopicDetailedTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -401,6 +407,26 @@
 				4BE41141205B807F000F9EE2 /* FFCacheManager.m */,
 			);
 			path = CacheUtil;
+			sourceTree = "<group>";
+		};
+		4BF5E2A3206C932900BF3970 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BF5E2A4206C934000BF3970 /* REDMyTopicModel.h */,
+				4BF5E2A5206C934000BF3970 /* REDMyTopicModel.m */,
+				4BF5E2AA206C9A1A00BF3970 /* REDTopicModel.h */,
+				4BF5E2AB206C9A1A00BF3970 /* REDTopicModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BF5E2AD206CD23F00BF3970 /* CommonUtil */ = {
+			isa = PBXGroup;
+			children = (
+				4BF5E2AE206CD26F00BF3970 /* FFCommonManager.h */,
+				4BF5E2AF206CD26F00BF3970 /* FFCommonManager.m */,
+			);
+			path = CommonUtil;
 			sourceTree = "<group>";
 		};
 		4BFB23002060B57400C64E25 /* Views */ = {
@@ -655,27 +681,29 @@
 				4B493F192057D236004EE319 /* FFNoticeManager.m in Sources */,
 				4BFB23072060C1CD00C64E25 /* REDMineTableViewManager.m in Sources */,
 				4B1B583B20529EAD002CAE83 /* FFHttpManager.m in Sources */,
-				4BE4114B205B8F05000F9EE2 /* NSData+FFEncrypt.m in Sources */,
 				4B34B95520526ED9005B1CC7 /* REDRootViewController.m in Sources */,
 				4B34B93820526967005B1CC7 /* AppDelegate+FFSetup.m in Sources */,
 				4BFB23032060B5A500C64E25 /* REDMineTopView.m in Sources */,
 				4B34B8FE205266B7005B1CC7 /* AppDelegate.m in Sources */,
-				4BE41148205B82C8000F9EE2 /* NSString+FFEncrypt.m in Sources */,
-				4B58B00C2068FBFD00755252 /* HomeCateTableViewCell.m in Sources */,
 				4B34B94820526E03005B1CC7 /* REDBaseNavigationBar.m in Sources */,
 				4B34B95B20526F81005B1CC7 /* REDHomeNavigationController.m in Sources */,
+				4BF5E2A6206C934000BF3970 /* REDMyTopicModel.m in Sources */,
 				4B1B583E2052A204002CAE83 /* FFHttpBaseService.m in Sources */,
 				4BE41142205B807F000F9EE2 /* FFCacheManager.m in Sources */,
 				4B493F152057CC75004EE319 /* AppDelegate+FFNotification.m in Sources */,
 				4B34B95220526E7F005B1CC7 /* REDMineViewController.m in Sources */,
 				4B34B94420526DD5005B1CC7 /* REDBaseTabBarController.m in Sources */,
+				4BF5E2AC206C9A1A00BF3970 /* REDTopicModel.m in Sources */,
+				4BF5E2B0206CD26F00BF3970 /* FFCommonManager.m in Sources */,
 				4B34B94120526DA8005B1CC7 /* REDBaseNavigationController.m in Sources */,
 				4B34B90F205266BA005B1CC7 /* main.m in Sources */,
 				4B34B93E20526D88005B1CC7 /* REDBaseViewController.m in Sources */,
 				4BE4113E205B7C68000F9EE2 /* FFPathManager.m in Sources */,
 				4B34B907205266B9005B1CC7 /* Red.xcdatamodeld in Sources */,
+				4BF5E2A2206C8C3F00BF3970 /* REDTopicDetailedTableViewCell.m in Sources */,
 				4B34B9352052692E005B1CC7 /* AppDelegate+FFRegister.m in Sources */,
 				4B1B58412052A460002CAE83 /* FFHttpService.m in Sources */,
+				4BF5E2A9206C997200BF3970 /* REDTopicDetailViewController.m in Sources */,
 				4B34B94E20526E6B005B1CC7 /* REDHomeViewController.m in Sources */,
 				4B34B95820526F72005B1CC7 /* REDMineNavigationController.m in Sources */,
 			);

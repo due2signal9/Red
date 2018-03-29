@@ -9,4 +9,8 @@
 
 @interface REDBaseViewController : UIViewController
 
+- (void)initNavigationBar;
+- (void)initSubviews;
+- (void)setupSubviews;
+
 @end

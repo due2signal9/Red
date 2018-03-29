@@ -10,5 +10,6 @@
 @interface REDHomeViewController : REDBaseViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property(strong, nonatomic) UITableView *tableView;
+@property(strong, nonatomic) NSMutableArray *myTopics;
 
 @end

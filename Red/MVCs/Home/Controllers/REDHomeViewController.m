@@ -6,7 +6,9 @@
 //
 
 #import "REDHomeViewController.h"
-#import "HomeCateTableViewCell.h"
+#import "REDTopicDetailedTableViewCell.h"
+#import "REDMyTopicModel.h"
+#import "REDTopicDetailViewController.h"
 
 @interface REDHomeViewController ()
 
@@ -20,10 +22,20 @@
     [self initNavigationBar];
     [self initSubviews];
     [self setupSubviews];
+    
+    //test
+    REDMyTopicModel *model1 = [REDMyTopicModel new];
+    [model1 setTitle: @"科幻文学"];
+    [model1 setSubTitle: @"89篇文章 | 78人关注"];
+    REDMyTopicModel *model2 = [REDMyTopicModel new];
+    [model2 setTitle: @"都市小说"];
+    [model2 setSubTitle: @"9篇文章 | 7人关注"];
+    [self setMyTopics: [NSMutableArray arrayWithObjects: model1, model2, nil]];
 }
 
 - (void)initNavigationBar {
     
+    [super initNavigationBar];
     self.title = @"我感兴趣的";
     
     UIImage *img = [UIImage imageNamed: @"left_pop_menu"];
@@ -32,6 +44,8 @@
 }
 
 - (void)initSubviews {
+    
+    [super initSubviews];
     
     UITableView *tableView = [[UITableView alloc] init];
     [self setTableView: tableView];
@@ -43,6 +57,8 @@
 }
 
 - (void)setupSubviews {
+    
+    [super setupSubviews];
     
     [[self tableView] mas_makeConstraints: ^(MASConstraintMaker *make) {
         
@@ -68,30 +84,25 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 2;
+    return [[self myTopics] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
-    HomeCateTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"home_cate_cell_id"];
-    if ( !cell )
+    REDTopicDetailedTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"red_topic_detailed_cellid"];
+    if (!cell)
     {
         
-        cell = [[HomeCateTableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle reuseIdentifier: @"home_cate_cell_id"];
+        cell = [[REDTopicDetailedTableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier: @"red_topic_detailed_cellid"];
     }
-    
-    [cell.imageView setImage: [UIImage imageNamed: @"left_pop_menu"]];
-    [cell.textLabel setText: @"title"];
-    [cell.detailTextLabel setText: @"detail"];
-    [cell setBackgroundColor: [UIColor whiteColor]];
-    
+    [[cell icon] setImage: [UIImage imageNamed: @"avatar_default"]];
+    [cell updateCell: [[self myTopics] objectAtIndex: [indexPath row]]];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 88.0;
+    return 75.0;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -105,11 +116,29 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath: indexPath animated: 1];
+    REDTopicDetailViewController *topicDetailVC = [[REDTopicDetailViewController alloc] init];
+    [topicDetailVC setupWithModel: [[self myTopics] objectAtIndex: [indexPath row]]];
+    [[self navigationController] pushViewController: topicDetailVC animated: 1];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     
     return 15.0;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 1;
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return UITableViewCellEditingStyleDelete;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"TEST: DELETE COMMITTED!");
 }
 /*
 #pragma mark - Navigation
