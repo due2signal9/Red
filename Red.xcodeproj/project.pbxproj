@@ -37,6 +37,7 @@
 		4BF5E2A9206C997200BF3970 /* REDTopicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5E2A8206C997200BF3970 /* REDTopicDetailViewController.m */; };
 		4BF5E2AC206C9A1A00BF3970 /* REDTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5E2AB206C9A1A00BF3970 /* REDTopicModel.m */; };
 		4BF5E2B0206CD26F00BF3970 /* FFCommonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5E2AF206CD26F00BF3970 /* FFCommonManager.m */; };
+		4BF5E2B4206CE49A00BF3970 /* REDMineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5E2B3206CE49A00BF3970 /* REDMineSettingViewController.m */; };
 		4BFB23032060B5A500C64E25 /* REDMineTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB23022060B5A500C64E25 /* REDMineTopView.m */; };
 		4BFB23072060C1CD00C64E25 /* REDMineTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB23062060C1CD00C64E25 /* REDMineTableViewManager.m */; };
 		61B89B8C7BF0311A2B0701A9 /* libPods-Red.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C963F1E2C6AA043661E5C3C4 /* libPods-Red.a */; };
@@ -123,6 +124,8 @@
 		4BF5E2AB206C9A1A00BF3970 /* REDTopicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDTopicModel.m; sourceTree = "<group>"; };
 		4BF5E2AE206CD26F00BF3970 /* FFCommonManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFCommonManager.h; sourceTree = "<group>"; };
 		4BF5E2AF206CD26F00BF3970 /* FFCommonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFCommonManager.m; sourceTree = "<group>"; };
+		4BF5E2B2206CE49A00BF3970 /* REDMineSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDMineSettingViewController.h; sourceTree = "<group>"; };
+		4BF5E2B3206CE49A00BF3970 /* REDMineSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDMineSettingViewController.m; sourceTree = "<group>"; };
 		4BFB23012060B5A500C64E25 /* REDMineTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDMineTopView.h; sourceTree = "<group>"; };
 		4BFB23022060B5A500C64E25 /* REDMineTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDMineTopView.m; sourceTree = "<group>"; };
 		4BFB23052060C1CD00C64E25 /* REDMineTableViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDMineTableViewManager.h; sourceTree = "<group>"; };
@@ -315,6 +318,8 @@
 				4B34B95120526E7F005B1CC7 /* REDMineViewController.m */,
 				4B34B95620526F72005B1CC7 /* REDMineNavigationController.h */,
 				4B34B95720526F72005B1CC7 /* REDMineNavigationController.m */,
+				4BF5E2B2206CE49A00BF3970 /* REDMineSettingViewController.h */,
+				4BF5E2B3206CE49A00BF3970 /* REDMineSettingViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -704,6 +709,7 @@
 				4B34B9352052692E005B1CC7 /* AppDelegate+FFRegister.m in Sources */,
 				4B1B58412052A460002CAE83 /* FFHttpService.m in Sources */,
 				4BF5E2A9206C997200BF3970 /* REDTopicDetailViewController.m in Sources */,
+				4BF5E2B4206CE49A00BF3970 /* REDMineSettingViewController.m in Sources */,
 				4B34B94E20526E6B005B1CC7 /* REDHomeViewController.m in Sources */,
 				4B34B95820526F72005B1CC7 /* REDMineNavigationController.m in Sources */,
 			);

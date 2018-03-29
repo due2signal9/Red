@@ -24,19 +24,16 @@
 
 - (void)initNavigationBar {
     
-    [super initNavigationBar];
     self.title = @"科幻文学";
 }
 
 - (void)initSubviews {
     
-    [super initSubviews];
     [[self view] setBackgroundColor: [UIColor whiteColor]];
 }
 
 - (void)setupSubviews {
     
-    [super setupSubviews];
 }
 
 - (void)setupWithModel:(REDMyTopicModel *)model {

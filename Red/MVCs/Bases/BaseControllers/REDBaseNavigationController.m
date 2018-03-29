@@ -15,7 +15,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [[self navigationBar] setBarTintColor: [UIColor colorWithHexString: @"ee1d24"]];
+    [[self navigationBar] setTitleTextAttributes: @{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    [[self navigationBar] setTintColor: [UIColor whiteColor]];
+    //[[[self navigationBar] layer] setShadowColor: [UIColor blackColor].CGColor];
+    //[[[self navigationBar] layer] setShadowOffset: CGSizeMake(0, 1)];
+    //[[[self navigationBar] layer] setShadowOpacity: 0.35];
 }
 
 - (void)didReceiveMemoryWarning {

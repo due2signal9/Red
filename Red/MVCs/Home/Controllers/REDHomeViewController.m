@@ -35,7 +35,6 @@
 
 - (void)initNavigationBar {
     
-    [super initNavigationBar];
     self.title = @"我感兴趣的";
     
     UIImage *img = [UIImage imageNamed: @"left_pop_menu"];
@@ -44,8 +43,6 @@
 }
 
 - (void)initSubviews {
-    
-    [super initSubviews];
     
     UITableView *tableView = [[UITableView alloc] init];
     [self setTableView: tableView];
@@ -57,8 +54,6 @@
 }
 
 - (void)setupSubviews {
-    
-    [super setupSubviews];
     
     [[self tableView] mas_makeConstraints: ^(MASConstraintMaker *make) {
         

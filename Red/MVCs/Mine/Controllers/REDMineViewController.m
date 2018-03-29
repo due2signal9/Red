@@ -7,6 +7,7 @@
 
 #import "REDMineViewController.h"
 #import "REDMineTableViewManager.h"
+#import "REDMineSettingViewController.h"
 
 @interface REDMineViewController ()
 
@@ -23,32 +24,35 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)initNavigationBar {
     
-    //[super viewWillAppear: animated];
-    //self.navigationController.delegate = self;
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
+    self.title = @"我的";
     
-    //[super viewWillDisappear: animated];
-    //self.navigationController.delegate = nil;
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithImage: [UIImage imageNamed: @"setting"] style: UIBarButtonItemStylePlain target: self action: @selector(pushToSetting)];
+    [[self navigationItem] setRightBarButtonItem: rightItem];
 }
 
 - (void)initSubviews {
     
-    REDMineTopView *topView = [[REDMineTopView alloc] initWithWith: FF_RELATIVE_SCREEN_WIDTH];
-    [self setTopView: topView];
-    
-    UITableView *tableView = [[UITableView alloc] initWithFrame: CGRectZero style: UITableViewStylePlain];
-    [self setTableView: tableView];
-    [[self tableView] setDataSource: self];
-    [[self tableView] setDelegate: self];
+//    REDMineTopView *topView = [[REDMineTopView alloc] initWithWith: FF_RELATIVE_SCREEN_WIDTH];
+//    [self setTopView: topView];
+//
+//    UITableView *tableView = [[UITableView alloc] initWithFrame: CGRectZero style: UITableViewStylePlain];
+//    [self setTableView: tableView];
+//    [[self tableView] setDataSource: self];
+//    [[self tableView] setDelegate: self];
 }
 
 - (void)setupSubviews {
     
     
+}
+
+- (void)pushToSetting {
+    
+    REDMineSettingViewController *settingVC = [[REDMineSettingViewController alloc] init];
+    [settingVC setHidesBottomBarWhenPushed: YES];
+    [[self navigationController] pushViewController: settingVC animated: 1];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

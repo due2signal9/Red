@@ -7,10 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface REDBaseViewController : UIViewController
-
-- (void)initNavigationBar;
-- (void)initSubviews;
-- (void)setupSubviews;
+@interface REDBaseViewController : UIViewController <UINavigationControllerDelegate>
 
 @end

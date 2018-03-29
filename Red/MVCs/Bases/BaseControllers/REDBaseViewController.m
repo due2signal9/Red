@@ -16,24 +16,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.automaticallyAdjustsScrollViewInsets = YES;
     // Do any additional setup after loading the view.
 }
 
-- (void)initNavigationBar {
-    
-    [[[self navigationController] navigationBar] setBarTintColor: [UIColor colorWithHexString: @"ee1d24"]];
-    [[[self navigationController] navigationBar] setTitleTextAttributes: @{NSForegroundColorAttributeName: [UIColor whiteColor]}];
-    [[[self navigationController] navigationBar] setTintColor: [UIColor whiteColor]];
-}
+//- (BOOL)amITheFirstController {
+//
+//    NSArray *VCs = [[self navigationController] viewControllers];
+//
+//    if ([VCs count])
+//    {
+//
+//        Class cls = [[VCs objectAtIndex: 0] class];
+//        return [self isKindOfClass: cls];
+//    }
+//
+//    return 1;
+//}
+//- (UIViewController *)rootVC {
+//
+//    NSArray *VCs = [[self navigationController] viewControllers];
+//
+//    if ([VCs count])
+//    {
+//
+//        return [VCs firstObject];
+//    }
+//
+//    return nil;
+//}
 
--(void)initSubviews {
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
-    self.automaticallyAdjustsScrollViewInsets = YES;
-}
-
-- (void)setupSubviews {
-    
-    
+//    BOOL isHidden = 1;
+//    if ([viewController isKindOfClass: [[self rootVC] class]])
+//        isHidden = 0;
+//    [[[self tabBarController] tabBar] setHidden: isHidden];
 }
 
 - (void)didReceiveMemoryWarning {
