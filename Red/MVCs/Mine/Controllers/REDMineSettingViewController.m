@@ -33,15 +33,14 @@
 
 - (void)initSubviews {
     
-    UITableView *tableView = [[UITableView alloc] init];
+    REDTableView *tableView = [[REDTableView alloc] initWithFrame: CGRectZero style: UITableViewStyleGrouped];
     [self setTableView: tableView];
-    [[self tableView] setSeparatorStyle: UITableViewCellSeparatorStyleNone];
     [[self tableView] setScrollEnabled: NO];
     [[self tableView] setDataSource: self];
     [[self tableView] setDelegate: self];
-    [[self tableView] setBackgroundColor: [UIColor colorWithHexString: @"F8F8F8"]];
+    //[[self tableView] setBackgroundColor: [UIColor colorWithHexString: @"F8F8F8"]];
     UIView *view = [[UIView alloc] initWithFrame: CGRectZero];
-    [view setBackgroundColor: [UIColor colorWithHexString: @"F8F8F8"]];
+    //[view setBackgroundColor: [UIColor colorWithHexString: @"F8F8F8"]];
     [[self tableView] setTableFooterView: view];
     [[self view] addSubview: tableView];
 }
@@ -85,25 +84,23 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 44.0;
+    return 50.0;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    [tableView deselectRowAtIndexPath: indexPath animated: 1];
     NSLog(@"TEST: YOU CLICKD CELL!");
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     
-    return 15.0;
+    return 10.0;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     
-    UIView *view = [[UIView alloc] init];
-    [view setBackgroundColor: [UIColor clearColor]];
-    
-    return view;
+    return 0.01;
 }
 
 - (void)didReceiveMemoryWarning {

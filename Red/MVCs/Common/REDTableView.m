@@ -1,13 +1,13 @@
 //
-//  REDBaseNavigationBar.m
+//  REDTableView.m
 //  Red
 //
-//  Created by 郭赞华 on 2018/3/9.
+//  Created by 郭赞华 on 2018/3/30.
 //
 
-#import "REDBaseNavigationBar.h"
+#import "REDTableView.h"
 
-@implementation REDBaseNavigationBar
+@implementation REDTableView
 
 /*
 // Only override drawRect: if you perform custom drawing.

@@ -6,6 +6,12 @@
 //
 
 #import "REDRootViewController.h"
+#import "REDHomeViewController.h"
+#import "REDMineViewController.h"
+#import "REDWriteViewController.h"
+#import "REDHomeNavigationController.h"
+#import "REDMineNavigationController.h"
+#import "REDWriteNavigationController.h"
 
 @interface REDRootViewController ()
 
@@ -15,6 +21,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    REDHomeNavigationController *homeNC = [[REDHomeNavigationController alloc] initWithRootViewController: [[REDHomeViewController alloc] init]];
+    REDWriteNavigationController *writeNC = [[REDWriteNavigationController alloc] initWithRootViewController: [[REDWriteViewController alloc] init]];
+    REDMineNavigationController *mineNC = [[REDMineNavigationController alloc] initWithRootViewController: [[REDMineViewController alloc] init]];
+    
+    //待替换
+    UIViewController *ccc = [[UIViewController alloc] init];
+    
+    REFrostedViewController *frostedVC = [[REFrostedViewController alloc] initWithContentViewController: homeNC menuViewController: ccc];
+    frostedVC.delegate = homeNC;
+    frostedVC.direction = REFrostedViewControllerDirectionLeft;
+    
+    frostedVC.tabBarItem.title = @"home";
+    writeNC.tabBarItem.title = @"write";
+    mineNC.tabBarItem.title = @"mine";
+    
+    NSArray *branches = @[frostedVC, writeNC, mineNC];
+    [self setViewControllers: branches];
     // Do any additional setup after loading the view.
 }
 

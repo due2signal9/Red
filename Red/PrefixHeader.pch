@@ -52,6 +52,7 @@
 #import "CommonUtil/FFCommonManager.h"
 #import "CacheUtil/FFCacheManager.h"
 #import "PathUtil/FFPathManager.h"
+#import "REDTableView.h"
 
 #import "REDBaseViewController.h"
 

@@ -16,6 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [[self view] setBackgroundColor: [UIColor colorWithHexString: @"F8F8F8"]];
     self.automaticallyAdjustsScrollViewInsets = YES;
     // Do any additional setup after loading the view.
 }

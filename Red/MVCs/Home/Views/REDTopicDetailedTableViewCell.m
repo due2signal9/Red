@@ -45,10 +45,10 @@
     [[[self icon] layer] setCornerRadius: 5.0];
     [[self icon] mas_makeConstraints: ^(MASConstraintMaker *make) {
         
-        make.left.equalTo(self.contentView.mas_left).offset(15.0);
+        make.left.equalTo(self.contentView.mas_left).offset(10.0);
         make.centerY.mas_equalTo(self.contentView.mas_centerY);
-        make.width.mas_equalTo(45.0);
-        make.height.mas_equalTo(45.0);
+        make.width.mas_equalTo(50.0);
+        make.height.mas_equalTo(50.0);
     }];
     
     [[self accessoryIcon] mas_makeConstraints: ^(MASConstraintMaker *make) {
@@ -56,29 +56,29 @@
         make.width.mas_equalTo(13.0);
         make.height.mas_equalTo(13.0);
         make.centerY.mas_equalTo(self.contentView.mas_centerY);
-        make.right.equalTo(self.contentView.mas_right).offset(-13.0);
+        make.right.equalTo(self.contentView.mas_right).offset(-10.0);
     }];
     
     [[self titleLabel] setTextColor: [UIColor blackColor]];
-    [[self titleLabel] setFont: [UIFont systemFontOfSize: 17.0]];
+    [[self titleLabel] setFont: [UIFont systemFontOfSize: 16.0]];
     [[self titleLabel] setTextAlignment: NSTextAlignmentLeft];
     [[self titleLabel] mas_makeConstraints: ^(MASConstraintMaker *make) {
         
-        make.left.equalTo(self.icon.mas_right).offset(11.0);
-        make.right.equalTo(self.accessoryIcon.mas_left).offset(-13.0);
-        make.top.equalTo(self.icon.mas_top).offset(-5.0);
-        make.height.mas_equalTo(26.0);
+        make.left.equalTo(self.icon.mas_right).offset(10.0);
+        make.right.equalTo(self.accessoryIcon.mas_left).offset(-10.0);
+        make.top.equalTo(self.icon.mas_top);
+        make.height.mas_equalTo(24.0);
     }];
     
     [[self subTitleLabel] setTextColor: [UIColor lightGrayColor]];
-    [[self subTitleLabel] setFont: [UIFont systemFontOfSize: 15.0]];
+    [[self subTitleLabel] setFont: [UIFont systemFontOfSize: 14.0]];
     [[self subTitleLabel] setTextAlignment: NSTextAlignmentLeft];
     [[self subTitleLabel] mas_makeConstraints: ^(MASConstraintMaker *make) {
         
-        make.left.equalTo(self.icon.mas_right).offset(11.0);
-        make.right.equalTo(self.accessoryIcon.mas_left).offset(-13.0);
-        make.bottom.equalTo(self.icon.mas_bottom).offset(5.0);
-        make.height.mas_equalTo(26.0);
+        make.left.equalTo(self.icon.mas_right).offset(10.0);
+        make.right.equalTo(self.accessoryIcon.mas_left).offset(-10.0);
+        make.bottom.equalTo(self.icon.mas_bottom).offset(3.0);
+        make.height.mas_equalTo(23.0);
     }];
 }
 

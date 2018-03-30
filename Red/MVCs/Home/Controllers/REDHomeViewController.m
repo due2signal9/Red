@@ -9,6 +9,7 @@
 #import "REDTopicDetailedTableViewCell.h"
 #import "REDMyTopicModel.h"
 #import "REDTopicDetailViewController.h"
+#import "REDBarButtonItem.h"
 
 @interface REDHomeViewController ()
 
@@ -37,19 +38,17 @@
     
     self.title = @"我感兴趣的";
     
-    UIImage *img = [UIImage imageNamed: @"left_pop_menu"];
-    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithImage: img style: UIBarButtonItemStylePlain target: self action: @selector(showLeftMenu)];
+    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithImage: [UIImage imageNamed: @"left_pop_menu"] style: UIBarButtonItemStylePlain target: self action: @selector(showLeftMenu)];
     [[self navigationItem] setLeftBarButtonItem: leftBtn];
 }
 
 - (void)initSubviews {
     
-    UITableView *tableView = [[UITableView alloc] init];
+    REDTableView *tableView = [[REDTableView alloc] initWithFrame: CGRectZero style: UITableViewStyleGrouped];
     [self setTableView: tableView];
     [[self view] addSubview: [self tableView]];
     [[self tableView] setDelegate: self];
     [[self tableView] setDataSource: self];
-    [[self tableView] setBackgroundColor: [UIColor colorWithHexString: @"F8F8F8"]];
     [[self tableView] setTableFooterView: [[UIView alloc] init]];
 }
 
@@ -97,7 +96,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 75.0;
+    return 70.0;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -113,12 +112,18 @@
     [tableView deselectRowAtIndexPath: indexPath animated: 1];
     REDTopicDetailViewController *topicDetailVC = [[REDTopicDetailViewController alloc] init];
     [topicDetailVC setupWithModel: [[self myTopics] objectAtIndex: [indexPath row]]];
+    [topicDetailVC setHidesBottomBarWhenPushed: YES];
     [[self navigationController] pushViewController: topicDetailVC animated: 1];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+
+    return 0.01;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     
-    return 15.0;
+    return 0.01;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

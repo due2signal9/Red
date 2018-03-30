@@ -1,25 +1,20 @@
 //
-//  REDBaseTabBarController.m
+//  REDWriteNavigationController.m
 //  Red
 //
-//  Created by 郭赞华 on 2018/3/9.
+//  Created by 郭赞华 on 2018/3/29.
 //
 
-#import "REDBaseTabBarController.h"
+#import "REDWriteNavigationController.h"
 
-@interface REDBaseTabBarController ()
+@interface REDWriteNavigationController ()
 
 @end
 
-@implementation REDBaseTabBarController
+@implementation REDWriteNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [[[self tabBar] layer] setShadowColor: [UIColor lightGrayColor].CGColor];
-    [[[self tabBar] layer] setShadowOffset: CGSizeMake(0, -2.0)];
-    [[[self tabBar] layer] setShadowOpacity: 0.3];
-    [[[self tabBar] layer] setShadowRadius: 1.0];
     // Do any additional setup after loading the view.
 }
 

@@ -19,9 +19,11 @@
     [[self navigationBar] setBarTintColor: [UIColor colorWithHexString: @"ee1d24"]];
     [[self navigationBar] setTitleTextAttributes: @{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     [[self navigationBar] setTintColor: [UIColor whiteColor]];
-    //[[[self navigationBar] layer] setShadowColor: [UIColor blackColor].CGColor];
-    //[[[self navigationBar] layer] setShadowOffset: CGSizeMake(0, 1)];
-    //[[[self navigationBar] layer] setShadowOpacity: 0.35];
+
+    [[[self navigationBar] layer] setShadowColor: [UIColor lightGrayColor].CGColor];
+    [[[self navigationBar] layer] setShadowOffset: CGSizeMake(0, 2.0)];
+    [[[self navigationBar] layer] setShadowOpacity: 0.3];
+    [[[self navigationBar] layer] setShadowRadius: 1.0];
 }
 
 - (void)didReceiveMemoryWarning {

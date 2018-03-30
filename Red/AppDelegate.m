@@ -7,10 +7,6 @@
 
 #import "AppDelegate.h"
 #import "REDRootViewController.h"
-#import "REDHomeViewController.h"
-#import "REDMineViewController.h"
-#import "REDHomeNavigationController.h"
-#import "REDMineNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -42,20 +38,6 @@
 - (UITabBarController *)createRoot {
 
     REDRootViewController *root = [[REDRootViewController alloc] init];
-    
-    REDHomeNavigationController *homeNC = [[REDHomeNavigationController alloc] initWithRootViewController: [[REDHomeViewController alloc] init]];
-    REDMineNavigationController *mineNC = [[REDMineNavigationController alloc] initWithRootViewController: [[REDMineViewController alloc] init]];
-    
-    UIViewController *ccc = [[UIViewController alloc] init];
-    REFrostedViewController *frostedVC = [[REFrostedViewController alloc] initWithContentViewController: homeNC menuViewController: ccc];
-    frostedVC.delegate = homeNC;
-    frostedVC.direction = REFrostedViewControllerDirectionLeft;
-    
-    homeNC.tabBarItem.title = @"home";
-    mineNC.tabBarItem.title = @"mine";
-    
-    NSArray *branches = @[frostedVC, mineNC];
-    [root setViewControllers: branches];
     
     return root;
 }
