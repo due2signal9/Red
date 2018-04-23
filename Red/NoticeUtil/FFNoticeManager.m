@@ -59,7 +59,7 @@
 
 + (void)showHudError:(id)error {
     
-    if ([error isKindOfClass: [NSString class]])
+    if ( [error isKindOfClass: [NSString class]] )
     {
         
     }

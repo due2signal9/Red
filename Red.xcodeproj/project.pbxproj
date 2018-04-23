@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B04ADEE208DDB8500E311B1 /* FFUserUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B04ADED208DDB8500E311B1 /* FFUserUtil.m */; };
 		4B1B583B20529EAD002CAE83 /* FFHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B583A20529EAD002CAE83 /* FFHttpManager.m */; };
 		4B1B583E2052A204002CAE83 /* FFHttpBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B583D2052A204002CAE83 /* FFHttpBaseService.m */; };
 		4B1B58412052A460002CAE83 /* FFHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B58402052A460002CAE83 /* FFHttpService.m */; };
@@ -66,6 +67,8 @@
 
 /* Begin PBXFileReference section */
 		32E5FEC7989FD4AE82FC06B3 /* Pods-Red.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Red.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Red/Pods-Red.debug.xcconfig"; sourceTree = "<group>"; };
+		4B04ADEC208DDB8500E311B1 /* FFUserUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFUserUtil.h; sourceTree = "<group>"; };
+		4B04ADED208DDB8500E311B1 /* FFUserUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFUserUtil.m; sourceTree = "<group>"; };
 		4B1B583920529EAD002CAE83 /* FFHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFHttpManager.h; sourceTree = "<group>"; };
 		4B1B583A20529EAD002CAE83 /* FFHttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFHttpManager.m; sourceTree = "<group>"; };
 		4B1B583C2052A204002CAE83 /* FFHttpBaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFHttpBaseService.h; sourceTree = "<group>"; };
@@ -381,6 +384,8 @@
 		4B493F0F2057B784004EE319 /* UserUtil */ = {
 			isa = PBXGroup;
 			children = (
+				4B04ADEC208DDB8500E311B1 /* FFUserUtil.h */,
+				4B04ADED208DDB8500E311B1 /* FFUserUtil.m */,
 			);
 			path = UserUtil;
 			sourceTree = "<group>";
@@ -731,6 +736,7 @@
 			files = (
 				4B493F192057D236004EE319 /* FFNoticeManager.m in Sources */,
 				4BFB23072060C1CD00C64E25 /* REDMineTableViewManager.m in Sources */,
+				4B04ADEE208DDB8500E311B1 /* FFUserUtil.m in Sources */,
 				4B5DEA99206E43C80082B2C0 /* REDTableView.m in Sources */,
 				4BF5E2C3206D11D200BF3970 /* REDBarButtonItem.m in Sources */,
 				4B1B583B20529EAD002CAE83 /* FFHttpManager.m in Sources */,

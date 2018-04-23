@@ -16,10 +16,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[[self tabBar] layer] setShadowColor: [UIColor lightGrayColor].CGColor];
-    [[[self tabBar] layer] setShadowOffset: CGSizeMake(0, -2.0)];
-    [[[self tabBar] layer] setShadowOpacity: 0.3];
-    [[[self tabBar] layer] setShadowRadius: 1.0];
+    //[[[self tabBar] layer] setShadowOffset: CGSizeMake(0, -1.0)];
+    //[[[self tabBar] layer] setShadowOpacity: 0.3];
+    //[[[self tabBar] layer] setShadowRadius: 1.0];
     // Do any additional setup after loading the view.
 }
 
