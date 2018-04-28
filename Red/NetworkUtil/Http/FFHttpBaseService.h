@@ -28,6 +28,7 @@ typedef enum : NSUInteger {
 
 - (instancetype)init;
 - (NSString *)baseURL;
+- (NSString *)port;
 - (NSString *)requestURL;
 - (NSDictionary *)requestArgument;
 - (CGFloat)timeoutInterval;

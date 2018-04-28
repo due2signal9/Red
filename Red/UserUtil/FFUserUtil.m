@@ -65,4 +65,14 @@ static FFUserUtil *_instance = nil;
     return [[url path] stringByAppendingPathComponent: path];
 }
 
+- (void)logout {
+    
+    [self setUser_id: nil];
+    [self setIs_auto_login: nil];
+    [self setUsername: nil];
+    [self setEmail: nil];
+    
+    [self saveArchive];
+}
+
 @end

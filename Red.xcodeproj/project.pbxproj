@@ -32,6 +32,8 @@
 		4B493F192057D236004EE319 /* FFNoticeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B493F182057D236004EE319 /* FFNoticeManager.m */; };
 		4B5DEA96206E43570082B2C0 /* REDBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5DEA95206E43570082B2C0 /* REDBaseTableView.m */; };
 		4B5DEA99206E43C80082B2C0 /* REDTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5DEA98206E43C80082B2C0 /* REDTableView.m */; };
+		4BCE87FF2094144B0018ADBC /* server-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BCE87FE2094144B0018ADBC /* server-info.plist */; };
+		4BCE88022094154C0018ADBC /* FFServerUrlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE88012094154C0018ADBC /* FFServerUrlManager.m */; };
 		4BE4113E205B7C68000F9EE2 /* FFPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4113D205B7C68000F9EE2 /* FFPathManager.m */; };
 		4BE41142205B807F000F9EE2 /* FFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE41141205B807F000F9EE2 /* FFCacheManager.m */; };
 		4BF5E2A2206C8C3F00BF3970 /* REDTopicDetailedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5E2A1206C8C3F00BF3970 /* REDTopicDetailedTableViewCell.m */; };
@@ -120,6 +122,9 @@
 		4B5DEA95206E43570082B2C0 /* REDBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDBaseTableView.m; sourceTree = "<group>"; };
 		4B5DEA97206E43C80082B2C0 /* REDTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REDTableView.h; sourceTree = "<group>"; };
 		4B5DEA98206E43C80082B2C0 /* REDTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REDTableView.m; sourceTree = "<group>"; };
+		4BCE87FE2094144B0018ADBC /* server-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "server-info.plist"; sourceTree = "<group>"; };
+		4BCE88002094154C0018ADBC /* FFServerUrlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFServerUrlManager.h; sourceTree = "<group>"; };
+		4BCE88012094154C0018ADBC /* FFServerUrlManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFServerUrlManager.m; sourceTree = "<group>"; };
 		4BE4113C205B7C68000F9EE2 /* FFPathManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPathManager.h; sourceTree = "<group>"; };
 		4BE4113D205B7C68000F9EE2 /* FFPathManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPathManager.m; sourceTree = "<group>"; };
 		4BE41140205B807F000F9EE2 /* FFCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFCacheManager.h; sourceTree = "<group>"; };
@@ -209,6 +214,7 @@
 		4B34B8FB205266B7005B1CC7 /* Red */ = {
 			isa = PBXGroup;
 			children = (
+				4BCE87FD2094142E0018ADBC /* ServerUtil */,
 				4BF5E2AD206CD23F00BF3970 /* CommonUtil */,
 				4BE4113F205B7FB4000F9EE2 /* CacheUtil */,
 				4BE4113B205B7C36000F9EE2 /* PathUtil */,
@@ -417,6 +423,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4BCE87FD2094142E0018ADBC /* ServerUtil */ = {
+			isa = PBXGroup;
+			children = (
+				4BCE87FE2094144B0018ADBC /* server-info.plist */,
+				4BCE88002094154C0018ADBC /* FFServerUrlManager.h */,
+				4BCE88012094154C0018ADBC /* FFServerUrlManager.m */,
+			);
+			path = ServerUtil;
+			sourceTree = "<group>";
+		};
 		4BE4113B205B7C36000F9EE2 /* PathUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -620,6 +636,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCE87FF2094144B0018ADBC /* server-info.plist in Resources */,
 				4B34B90C205266BA005B1CC7 /* LaunchScreen.storyboard in Resources */,
 				4B34B909205266B9005B1CC7 /* Assets.xcassets in Resources */,
 			);
@@ -744,6 +761,7 @@
 				4B34B93820526967005B1CC7 /* AppDelegate+FFSetup.m in Sources */,
 				4B5DEA96206E43570082B2C0 /* REDBaseTableView.m in Sources */,
 				4BF5E2BC206D0E2200BF3970 /* REDWriteNavigationController.m in Sources */,
+				4BCE88022094154C0018ADBC /* FFServerUrlManager.m in Sources */,
 				4BFB23032060B5A500C64E25 /* REDMineTopView.m in Sources */,
 				4B34B8FE205266B7005B1CC7 /* AppDelegate.m in Sources */,
 				4BF5E2B9206D0D4100BF3970 /* REDWriteViewController.m in Sources */,

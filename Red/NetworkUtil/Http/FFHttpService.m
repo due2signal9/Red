@@ -6,6 +6,7 @@
 //
 
 #import "FFHttpService.h"
+#import "FFServerUrlManager.h"
 
 @implementation FFHttpService
 
@@ -83,6 +84,24 @@
     
     [self beginRequest];
     NSLog(@"[%@ | %@] -> 你启动了一个同步网络请求", [self class], NSStringFromSelector(_cmd));
+}
+
+- (NSString *)baseURL {
+    
+#ifdef IS_DEV_SERVER
+    return [FFServerUrlManager getApiHostForServerType: @"dev"];
+#else
+    return [FFServerUrlManager getApiHostForServerType: @"test"];
+#endif
+}
+
+- (NSString *)port {
+    
+#ifdef IS_DEV_SERVER
+    return [FFServerUrlManager getApiHostPortForServerType: @"dev"];
+#else
+    return [FFServerUrlManager getApiHostPortForServerType: @"test"];
+#endif
 }
 
 - (void)resume {

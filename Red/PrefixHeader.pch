@@ -8,11 +8,15 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+//开发状态定义
+
+#define IS_DEV_SERVER 1
+
 //一些宏定义
 #define FFWeakSelf(ws)  __weak __typeof(&*self)ws = self;
 #define FFStrongSelf(ws)  __strong __typeof(&*self)ws = self;
 
-#define FF_HW_RATIO (667/375)
+#define FF_HW_RATIO (667.0/375.0)
 
 //RELATIVE ABSOLUTE 用于区分横屏下的绝对长宽
 #define FF_RELATIVE_SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)

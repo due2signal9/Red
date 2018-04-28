@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>prod</key>
+	<dict>
+		<key>api_host</key>
+		<string>http://www.xxx.com/</string>
+		<key>api_host_port</key>
+		<string>8080</string>
+	</dict>
+	<key>dev</key>
+	<dict>
+		<key>api_host</key>
+		<string>http://www.xxx.com/</string>
+		<key>api_host_port</key>
+		<string>8080</string>
+	</dict>
+	<key>test</key>
+	<dict>
+		<key>api_host</key>
+		<string>http://www.xxx.com/</string>
+		<key>api_host_port</key>
+		<string>8080</string>
+	</dict>
+</dict>
+</plist>

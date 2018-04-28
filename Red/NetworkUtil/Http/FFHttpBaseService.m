@@ -24,7 +24,12 @@
 
 - (NSString *)baseURL {
     
-    return @"http://www.xxx.com";
+    return nil;
+}
+
+- (NSString *)port {
+    
+    return nil;
 }
 
 - (NSString *)requestURL {
@@ -55,7 +60,7 @@
 - (NSString *)buildHttpURL {
     
     NSString *url = [self requestURL];
-    if ( [url hasPrefix: @"http"] )
+    if ( [url hasPrefix: @"http"] || [url hasPrefix: @"https"])
     {
         
         return url;
@@ -63,7 +68,7 @@
     else
     {
         
-        return [NSString stringWithFormat: @"%@%@", [self baseURL], [self requestURL]];
+        return [NSString stringWithFormat: @"%@%@%@", [self baseURL], [self port], [self requestURL]];
     }
 }
 
