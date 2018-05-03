@@ -31,6 +31,7 @@ typedef enum : NSUInteger {
 - (NSString *)port;
 - (NSString *)requestURL;
 - (NSDictionary *)requestArgument;
+- (BOOL)isBasicAuth;
 - (CGFloat)timeoutInterval;
 - (METHOD)requestMethod;
 - (NSString *)buildHttpURL;

@@ -57,6 +57,11 @@
     [[FFHttpManager sharedManager] addRequest: self];
 }
 
+- (BOOL)isBasicAuth {
+    
+    return NO;
+}
+
 - (NSString *)buildHttpURL {
     
     NSString *url = [self requestURL];

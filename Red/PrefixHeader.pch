@@ -53,12 +53,13 @@
 #import "NetworkUtil/Http/FFHttpManager.h"
 #import "NetworkUtil/Http/FFHttpService.h"
 #import "NoticeUtil/FFNoticeManager.h"
-#import "CommonUtil/FFCommonManager.h"
+#import "CommonUtil/FFCommonUtil.h"
 #import "CacheUtil/FFCacheManager.h"
 #import "PathUtil/FFPathManager.h"
 #import "REDTableView.h"
 #import "FFUserUtil.h"
 
 #import "REDBaseViewController.h"
+#import "REDWebViewController.h"
 
 #endif /* PrefixHeader_pch */

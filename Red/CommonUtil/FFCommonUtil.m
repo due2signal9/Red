@@ -1,13 +1,13 @@
 //
-//  FFCommonManager.m
+//  FFCommonUtil
 //  Red
 //
 //  Created by 郭赞华 on 2018/3/29.
 //
 
-#import "FFCommonManager.h"
+#import "FFCommonUtil.h"
 
-@implementation FFCommonManager
+@implementation FFCommonUtil
 
 + (void)runOnMainThreadWithBlock:(MainThreadBlock)block {
     
@@ -29,6 +29,11 @@
 + (UIWindow *)ff_keyWindow {
     
     return [UIApplication sharedApplication].keyWindow;
+}
+
++ (BOOL)isLegalPhone {
+    
+    return YES;
 }
 
 @end

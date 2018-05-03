@@ -43,15 +43,15 @@
 
 + (void)showHudMessage:(NSString *)message {
     
-    [FFCommonManager runOnMainThreadWithBlock: ^{
+    [FFCommonUtil runOnMainThreadWithBlock: ^{
         
-        [[self class] showHudMessage: message inView: [FFCommonManager ff_keyWindow]];
+        [[self class] showHudMessage: message inView: [FFCommonUtil ff_keyWindow]];
     }];
 }
 
 + (void)showHudSuccess:(NSString *)message {
     
-    [FFCommonManager runOnMainThreadWithBlock: ^{
+    [FFCommonUtil runOnMainThreadWithBlock: ^{
         
         
     }];
@@ -80,9 +80,9 @@
 
 + (void)showHudTitle:(NSString *)title subTitlte:(NSString *)subTitle {
     
-    [FFCommonManager runOnMainThreadWithBlock: ^{
+    [FFCommonUtil runOnMainThreadWithBlock: ^{
         
-        [[self class] showHudTitle: title subTitlte: subTitle inView: [FFCommonManager ff_keyWindow]];
+        [[self class] showHudTitle: title subTitlte: subTitle inView: [FFCommonUtil ff_keyWindow]];
     }];
 }
 

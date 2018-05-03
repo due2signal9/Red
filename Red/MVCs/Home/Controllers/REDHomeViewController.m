@@ -10,6 +10,7 @@
 #import "REDMyTopicModel.h"
 #import "REDTopicDetailViewController.h"
 #import "REDBarButtonItem.h"
+#import "REDTestService.h"
 
 @interface REDHomeViewController ()
 
@@ -32,6 +33,15 @@
     [model2 setTitle: @"都市小说"];
     [model2 setSubTitle: @"9篇文章 | 7人关注"];
     [self setMyTopics: [NSMutableArray arrayWithObjects: model1, model2, nil]];
+    
+    REDTestService *service = [[REDTestService alloc] init];
+    [service requestAsyncWithReturend: ^(id response) {
+    
+        id a = response;
+    } withProgress: nil withError: ^(NSError *error) {
+        
+        id b = error;
+    }];
 }
 
 - (void)initNavigationBar {
@@ -61,6 +71,11 @@
 }
 
 - (void)showLeftMenu {
+    
+    REDWebViewController *wvc = [[REDWebViewController alloc] init];
+    [wvc setHidesBottomBarWhenPushed: YES];
+    [[self navigationController] pushViewController: wvc animated: 1];
+    return;
     
     NSLog(@"YOU HAVE CLICKED LEFT MENU!!!");
     [self.frostedViewController presentMenuViewController];
