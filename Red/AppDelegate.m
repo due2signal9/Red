@@ -25,6 +25,10 @@
     [[self window] setRootViewController: [self createRoot]];
     
     [[self window] makeKeyAndVisible];
+    
+    //test
+    FFLocalizedString(@"oh yeah");
+    
     return YES;
 }
 

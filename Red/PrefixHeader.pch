@@ -15,6 +15,7 @@
 //一些宏定义
 #define FFWeakSelf(ws)  __weak __typeof(&*self)ws = self;
 #define FFStrongSelf(ws)  __strong __typeof(&*self)ws = self;
+#define FFLocalizedString(key) [FFLocalizationManager localizedStringWithKey: (key)]
 
 #define FF_HW_RATIO (667.0/375.0)
 
@@ -50,6 +51,7 @@
 #import "REFrostedViewController/UIViewController+REFrostedViewController.h"
 #import "REFrostedViewController/REFrostedContainerViewController.h"
 
+#import "Localization/FFLocalizationManager.h"
 #import "NetworkUtil/Http/FFHttpManager.h"
 #import "NetworkUtil/Http/FFHttpService.h"
 #import "NoticeUtil/FFNoticeManager.h"

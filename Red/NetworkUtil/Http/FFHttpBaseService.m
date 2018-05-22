@@ -57,9 +57,14 @@
     [[FFHttpManager sharedManager] addRequest: self];
 }
 
-- (BOOL)isBasicAuth {
+- (NSString *)basicAuth {
+
+    return nil;
+}
+
+- (NSString *)token {
     
-    return NO;
+    return nil;
 }
 
 - (NSString *)buildHttpURL {

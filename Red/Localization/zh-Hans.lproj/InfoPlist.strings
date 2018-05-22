@@ -1,0 +1,25 @@
+/* 
+  InfoPlist.strings
+  Red
+
+  Created by chen hao on 2018/5/17.
+  
+*/
+
+"CFBundleDisplayName"="红";
+
+//下面是一些实例
+
+//"NSCalendarsUsageDescription"="是否允许访问日历";
+//"ShortcutTitleMyRoom"="我的房间";
+//"NSAppleMusicUsageDescription"="是否允许访问媒体库";
+//"NSLocationAlwaysUsageDescription"="请打开定位服务以确定您的位置.";
+//"NSContactsUsageDescription"="是否允许访问联系人";
+//"NSMicrophoneUsageDescription"="是否允许访问麦克风";
+//"CFBundleDisplayName"="邦德乐思";
+//"NSPhotoLibraryUsageDescription"="是否允许访问照片";
+//"NSCameraUsageDescription"="是否允许访问照相机";
+//"NSLocationUsageDescription"="请打开定位服务以确定您的位置.";
+//"ShortcutTitleMyQRCode"="我的QR码";
+//"NSLocationWhenInUseUsageDescription"="请打开定位服务以确定您的位置.";
+

@@ -33,6 +33,7 @@ static FFUserUtil *_instance = nil;
         [self setEmail: nil];
         [self setUser_id: nil];
         [self setUsername: nil];
+        [self setPassword: nil];
         [self setIs_auto_login: 0];
         [self saveArchive];
     }
@@ -65,14 +66,37 @@ static FFUserUtil *_instance = nil;
     return [[url path] stringByAppendingPathComponent: path];
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    
+    return nil; //待补充
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    
+    //待补充
+}
+
 - (void)logout {
     
     [self setUser_id: nil];
     [self setIs_auto_login: nil];
     [self setUsername: nil];
+    [self setPassword: nil];
     [self setEmail: nil];
     
     [self saveArchive];
+}
+
++ (NSString *)GET_TOKEN {
+    
+    return [[FFUserUtil sharedInstance] token];
+}
+
++ (NSString *)GET_BASIC_AUTH {
+    
+    NSData *basicAuthCredentials = [[NSString stringWithFormat: @"%@:%@", [[FFUserUtil sharedInstance] username], [[FFUserUtil sharedInstance] password]] dataUsingEncoding: NSUTF8StringEncoding];
+    NSString *base64AuthCredentials = [basicAuthCredentials base64EncodedStringWithOptions: 0];
+    return [NSString stringWithFormat: @"Basic %@", base64AuthCredentials];
 }
 
 @end
